@@ -1,0 +1,575 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		024081FB50A1388DACADCEEF /* libCIMLuaBindingCoreImage.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 6CC400268AB9BD69F680F424 /* libCIMLuaBindingCoreImage.dylib */; };
+		0467DC0087CD0FDA917EBD02 /* libCIMLuaBindingAppKit.dylib in Copy CIMLua Frameworks */ = {isa = PBXBuildFile; fileRef = D75E5A0F6964D85991F01E6E /* libCIMLuaBindingAppKit.dylib */; };
+		0A28B74544810B034F5FD7E1 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6AF8EB277F8E7151B6CCFD25 /* QuartzCore.framework */; };
+		0B39CBD90BAA816293210BF2 /* libCIMLuaBindingCoreImage.dylib in Copy CIMLua Frameworks */ = {isa = PBXBuildFile; fileRef = 6CC400268AB9BD69F680F424 /* libCIMLuaBindingCoreImage.dylib */; };
+		0D213A166EE8FD56AF60F7CB /* CIMLuaX.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 57F336E6164C7D0CD850A4AE /* CIMLuaX.dylib */; };
+		11E458D4A87D4BB7633484D4 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0595C73A1E48508C8F70B687 /* AVFoundation.framework */; };
+		12F50FF3121348BBCB994508 /* libCIMLuaBindingQuartzCore.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 5DABC6D4DDDB2B15BB166CB1 /* libCIMLuaBindingQuartzCore.dylib */; };
+		168D5DA88058C373B102ECED /* libCIMLuaBindingAVFoundation.dylib in Copy CIMLua Frameworks */ = {isa = PBXBuildFile; fileRef = 8105588BC5B74D75A7088386 /* libCIMLuaBindingAVFoundation.dylib */; };
+		1DB3240931C55F0A3EB2163B /* libCIMLuaBindingFoundation.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 7B0F8188F239ED3D803AF7A9 /* libCIMLuaBindingFoundation.dylib */; };
+		1F93E23965C2BB1313C92E79 /* libCIMLuaBindingFoundation.dylib in Copy CIMLua Frameworks */ = {isa = PBXBuildFile; fileRef = 7B0F8188F239ED3D803AF7A9 /* libCIMLuaBindingFoundation.dylib */; };
+		3ED1D6E01CC47FA81258EF6B /* libCIMLuaBindingOsX.dylib in Copy CIMLua Frameworks */ = {isa = PBXBuildFile; fileRef = 09A964383E37206E3D95DB9F /* libCIMLuaBindingOsX.dylib */; };
+		4149578CFCF6E771C02D9BCB /* CIMLuaX.dylib in Copy CIMLua Frameworks */ = {isa = PBXBuildFile; fileRef = 57F336E6164C7D0CD850A4AE /* CIMLuaX.dylib */; };
+		4C6DED2EB23FEBB0A3965396 /* libCIMLuaBindingCoreAudio.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 9D1AF57126C6DE9926233D70 /* libCIMLuaBindingCoreAudio.dylib */; };
+		51073410134C7BB6D83798AA /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A4132F3DBD89FE3F4E8A1567 /* AudioToolbox.framework */; };
+		56D2E5484CAB2B39B628666D /* libCIMLuaBindingCoreAudio.dylib in Copy CIMLua Frameworks */ = {isa = PBXBuildFile; fileRef = 9D1AF57126C6DE9926233D70 /* libCIMLuaBindingCoreAudio.dylib */; };
+		56DE84CCAE0CCDC3525E82C5 /* libCIMLuaBindingAudioUnit.dylib in Copy CIMLua Frameworks */ = {isa = PBXBuildFile; fileRef = E1024312C8D59917B7F415A1 /* libCIMLuaBindingAudioUnit.dylib */; };
+		59F12AF596B04A52D1959E80 /* AudioUnit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E9DD7FB658C9D082E03D0B5E /* AudioUnit.framework */; };
+		65D007784DDEEED1CB78CC63 /* libCIMLuaBindingCoreGraphics.dylib in Copy CIMLua Frameworks */ = {isa = PBXBuildFile; fileRef = 1200258535E6CA0F77B7E479 /* libCIMLuaBindingCoreGraphics.dylib */; };
+		6A3189A0DFF7E7D9257413E1 /* libCIMLuaBindingOsX.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 09A964383E37206E3D95DB9F /* libCIMLuaBindingOsX.dylib */; };
+		7E1C5D8FBBF5B407E7F6E39C /* libCIMLuaBindingGLKit.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 91233CC46A07BBF2A330B155 /* libCIMLuaBindingGLKit.dylib */; };
+		88DE73797B8CB9118513F2F9 /* libCIMLuaBindingLuaPanda.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 524304AC055C8CB7BB9C43A2 /* libCIMLuaBindingLuaPanda.a */; };
+		8A214FE25B57BA9A789B7D1D /* AppKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2A3CA79B3B9E8E9B0759D9FF /* AppKit.framework */; };
+		96768975AE36A5D1CD1227AE /* libCIMLuaBindingCoreGraphics.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 1200258535E6CA0F77B7E479 /* libCIMLuaBindingCoreGraphics.dylib */; };
+		96C5240093D19ADBB053E83E /* libCIMLuaBindingSceneKit.dylib in Copy CIMLua Frameworks */ = {isa = PBXBuildFile; fileRef = 76C82D787CAB1B7F5189FF4E /* libCIMLuaBindingSceneKit.dylib */; };
+		9D5906A6F348E43E90514B97 /* libCIMLuaBindingQuartzCore.dylib in Copy CIMLua Frameworks */ = {isa = PBXBuildFile; fileRef = 5DABC6D4DDDB2B15BB166CB1 /* libCIMLuaBindingQuartzCore.dylib */; };
+		A69A9FCBB08427121E4B385D /* libCIMLuaBindingGameController.dylib in Copy CIMLua Frameworks */ = {isa = PBXBuildFile; fileRef = E0BC2945182D5E4AD351CAC6 /* libCIMLuaBindingGameController.dylib */; };
+		A754A6580EEDDBCE9536034A /* libCIMLuaBindingAppKit.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = D75E5A0F6964D85991F01E6E /* libCIMLuaBindingAppKit.dylib */; };
+		ACC9253CC9B932B734BE33CF /* Metal.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 313CDF7A3202890F433C39C4 /* Metal.framework */; };
+		B47CCBD3B7D39F9155850464 /* libCIMLuaBindingAVFoundation.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 8105588BC5B74D75A7088386 /* libCIMLuaBindingAVFoundation.dylib */; };
+		B52C962E940FE36C66D9D563 /* libCIMLuaBindingGLKit.dylib in Copy CIMLua Frameworks */ = {isa = PBXBuildFile; fileRef = 91233CC46A07BBF2A330B155 /* libCIMLuaBindingGLKit.dylib */; };
+		BB035B0BA22C22B152050AA3 /* libCIMLuaBindingGameController.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = E0BC2945182D5E4AD351CAC6 /* libCIMLuaBindingGameController.dylib */; };
+		C2CBD6EFB38CADF125950BD6 /* CoreImage.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 22A5F840A7E7E74DF2383F1A /* CoreImage.framework */; };
+		C3FBE8AED34009AC9D96FDEA /* libCIMLuaBindingMetal.dylib in Copy CIMLua Frameworks */ = {isa = PBXBuildFile; fileRef = 0F9082E0CE59D8FA510742EA /* libCIMLuaBindingMetal.dylib */; };
+		C6FD86D4CCD1A0602983B226 /* CoreAudio.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 40EE32DD41CE27DED53F6CEE /* CoreAudio.framework */; };
+		C83C92240850D1E8A10FA5BE /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 64D881587E352A8CE06323A1 /* CoreGraphics.framework */; };
+		D0A6C1D35127EB11237E3B59 /* libCIMLuaBindingMetal.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 0F9082E0CE59D8FA510742EA /* libCIMLuaBindingMetal.dylib */; };
+		D0C00680535272FD021EE3B0 /* libCIMLuaBindingSpriteKit.dylib in Copy CIMLua Frameworks */ = {isa = PBXBuildFile; fileRef = 782155876AA469E6337D44D1 /* libCIMLuaBindingSpriteKit.dylib */; };
+		D28B69F76BB1837E66C607CB /* CIMLuaDebugServerOSX.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 9FA394FD3959172996E63D76 /* CIMLuaDebugServerOSX.dylib */; };
+		D695F0058454E362E34D4ECB /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9840561063E5EB097F6B3BC2 /* Foundation.framework */; };
+		DCAF1427FB480A67B5CC89ED /* CIMLuaDebugServerOSX.dylib in Copy CIMLua Frameworks */ = {isa = PBXBuildFile; fileRef = 9FA394FD3959172996E63D76 /* CIMLuaDebugServerOSX.dylib */; };
+		E3803B2E105A525AE2248D42 /* GameController.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F5BE5B286CDB4ED30A50E0DE /* GameController.framework */; };
+		E54A0DED9717F9D6FA1BE48C /* CloudKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 84C23E120B3523607D0546F2 /* CloudKit.framework */; };
+		E73CFAAA10A0440CE1FF12DF /* libCIMLuaBindingAudioUnit.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = E1024312C8D59917B7F415A1 /* libCIMLuaBindingAudioUnit.dylib */; };
+		E7D92BF28F9DDE7F5E8DBE05 /* GLKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9C8C46CE486204D3CE9E24BF /* GLKit.framework */; };
+		F05B46CD359887A66B65B239 /* SceneKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8A66C436D77564723E911F98 /* SceneKit.framework */; };
+		F612C31D00FEDEFA3FA0ECDE /* libCIMLuaBindingSceneKit.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 76C82D787CAB1B7F5189FF4E /* libCIMLuaBindingSceneKit.dylib */; };
+		F645FA2D9224124A9154501C /* libCIMLuaBindingSpriteKit.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 782155876AA469E6337D44D1 /* libCIMLuaBindingSpriteKit.dylib */; };
+		F91125DB4A1C841DE68CD4B4 /* SpriteKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EF487CAE0D5051AB1EDE6A13 /* SpriteKit.framework */; };
+		FD5C3EBB1D781E4A0007859C /* game.scnassets in Resources */ = {isa = PBXBuildFile; fileRef = FD5C3EAD1D781E4A0007859C /* game.scnassets */; };
+		FD5C3EBC1D781E4A0007859C /* congratulations.png in Resources */ = {isa = PBXBuildFile; fileRef = FD5C3EAF1D781E4A0007859C /* congratulations.png */; };
+		FD5C3EBD1D781E4A0007859C /* congratulations_pandaMax.png in Resources */ = {isa = PBXBuildFile; fileRef = FD5C3EB01D781E4A0007859C /* congratulations_pandaMax.png */; };
+		FD5C3EBE1D781E4A0007859C /* dpad.png in Resources */ = {isa = PBXBuildFile; fileRef = FD5C3EB11D781E4A0007859C /* dpad.png */; };
+		FD5C3EBF1D781E4A0007859C /* FlowerEmpty.png in Resources */ = {isa = PBXBuildFile; fileRef = FD5C3EB21D781E4A0007859C /* FlowerEmpty.png */; };
+		FD5C3EC01D781E4A0007859C /* FlowerFull.png in Resources */ = {isa = PBXBuildFile; fileRef = FD5C3EB31D781E4A0007859C /* FlowerFull.png */; };
+		FD5C3EC11D781E4A0007859C /* ItemsPearl.png in Resources */ = {isa = PBXBuildFile; fileRef = FD5C3EB41D781E4A0007859C /* ItemsPearl.png */; };
+		FD5C3EC21D781E4A0007859C /* MaxIcon.png in Resources */ = {isa = PBXBuildFile; fileRef = FD5C3EB51D781E4A0007859C /* MaxIcon.png */; };
+		FD5C3EC31D781E4A0007859C /* collect.scnp in Resources */ = {isa = PBXBuildFile; fileRef = FD5C3EB71D781E4A0007859C /* collect.scnp */; };
+		FD5C3EC41D781E4A0007859C /* confetti.png in Resources */ = {isa = PBXBuildFile; fileRef = FD5C3EB81D781E4A0007859C /* confetti.png */; };
+		FD5C3EC51D781E4A0007859C /* confetti.scnp in Resources */ = {isa = PBXBuildFile; fileRef = FD5C3EB91D781E4A0007859C /* confetti.scnp */; };
+		FD5C3EC61D781E4A0007859C /* glow01.png in Resources */ = {isa = PBXBuildFile; fileRef = FD5C3EBA1D781E4A0007859C /* glow01.png */; };
+		FD5C3EC81D781FE40007859C /* GameView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD5C3EC71D781FE40007859C /* GameView.swift */; };
+		FD5C3ECA1D7823C20007859C /* GameControls.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD5C3EC91D7823C20007859C /* GameControls.swift */; };
+		FD5C3ECC1D782BEB0007859C /* SceneKitExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD5C3ECB1D782BEB0007859C /* SceneKitExtensions.swift */; };
+		FD7025BE1CBA8CAE00BB305A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD7025BD1CBA8CAE00BB305A /* AppDelegate.swift */; };
+		FD7025C01CBA8CAE00BB305A /* GameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD7025BF1CBA8CAE00BB305A /* GameViewController.swift */; };
+		FD7025C21CBA8CAE00BB305A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FD7025C11CBA8CAE00BB305A /* Assets.xcassets */; };
+		FD7025C51CBA8CAE00BB305A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FD7025C31CBA8CAE00BB305A /* Main.storyboard */; };
+		FDF564D71D8C08CF00350D57 /* sounds in Resources */ = {isa = PBXBuildFile; fileRef = FDF564D61D8C08CF00350D57 /* sounds */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		04344CA5E7796BE2C7227BAB /* Copy CIMLua Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				4149578CFCF6E771C02D9BCB /* CIMLuaX.dylib in Copy CIMLua Frameworks */,
+				DCAF1427FB480A67B5CC89ED /* CIMLuaDebugServerOSX.dylib in Copy CIMLua Frameworks */,
+				3ED1D6E01CC47FA81258EF6B /* libCIMLuaBindingOsX.dylib in Copy CIMLua Frameworks */,
+				168D5DA88058C373B102ECED /* libCIMLuaBindingAVFoundation.dylib in Copy CIMLua Frameworks */,
+				A69A9FCBB08427121E4B385D /* libCIMLuaBindingGameController.dylib in Copy CIMLua Frameworks */,
+				D0C00680535272FD021EE3B0 /* libCIMLuaBindingSpriteKit.dylib in Copy CIMLua Frameworks */,
+				56D2E5484CAB2B39B628666D /* libCIMLuaBindingCoreAudio.dylib in Copy CIMLua Frameworks */,
+				65D007784DDEEED1CB78CC63 /* libCIMLuaBindingCoreGraphics.dylib in Copy CIMLua Frameworks */,
+				B52C962E940FE36C66D9D563 /* libCIMLuaBindingGLKit.dylib in Copy CIMLua Frameworks */,
+				1F93E23965C2BB1313C92E79 /* libCIMLuaBindingFoundation.dylib in Copy CIMLua Frameworks */,
+				56DE84CCAE0CCDC3525E82C5 /* libCIMLuaBindingAudioUnit.dylib in Copy CIMLua Frameworks */,
+				0B39CBD90BAA816293210BF2 /* libCIMLuaBindingCoreImage.dylib in Copy CIMLua Frameworks */,
+				9D5906A6F348E43E90514B97 /* libCIMLuaBindingQuartzCore.dylib in Copy CIMLua Frameworks */,
+				96C5240093D19ADBB053E83E /* libCIMLuaBindingSceneKit.dylib in Copy CIMLua Frameworks */,
+				C3FBE8AED34009AC9D96FDEA /* libCIMLuaBindingMetal.dylib in Copy CIMLua Frameworks */,
+				0467DC0087CD0FDA917EBD02 /* libCIMLuaBindingAppKit.dylib in Copy CIMLua Frameworks */,
+			);
+			name = "Copy CIMLua Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		0595C73A1E48508C8F70B687 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		09A964383E37206E3D95DB9F /* libCIMLuaBindingOsX.dylib */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "compiled.mach-o.dylib"; name = libCIMLuaBindingOsX.dylib; path = "/Users/jean-luc/Library/Application Support/com.celedev.CodeFlow/macosx/OSX-10.11.4-SDK.luabindings/BindingLibs/libCIMLuaBindingOsX.dylib"; sourceTree = "<absolute>"; };
+		0F9082E0CE59D8FA510742EA /* libCIMLuaBindingMetal.dylib */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "compiled.mach-o.dylib"; name = libCIMLuaBindingMetal.dylib; path = "/Users/jean-luc/Library/Application Support/com.celedev.CodeFlow/macosx/OSX-10.11.4-SDK.luabindings/BindingLibs/libCIMLuaBindingMetal.dylib"; sourceTree = "<absolute>"; };
+		1200258535E6CA0F77B7E479 /* libCIMLuaBindingCoreGraphics.dylib */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "compiled.mach-o.dylib"; name = libCIMLuaBindingCoreGraphics.dylib; path = "/Users/jean-luc/Library/Application Support/com.celedev.CodeFlow/macosx/OSX-10.11.4-SDK.luabindings/BindingLibs/libCIMLuaBindingCoreGraphics.dylib"; sourceTree = "<absolute>"; };
+		22A5F840A7E7E74DF2383F1A /* CoreImage.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreImage.framework; path = System/Library/Frameworks/CoreImage.framework; sourceTree = SDKROOT; };
+		2A3CA79B3B9E8E9B0759D9FF /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
+		313CDF7A3202890F433C39C4 /* Metal.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Metal.framework; path = System/Library/Frameworks/Metal.framework; sourceTree = SDKROOT; };
+		40EE32DD41CE27DED53F6CEE /* CoreAudio.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreAudio.framework; path = System/Library/Frameworks/CoreAudio.framework; sourceTree = SDKROOT; };
+		524304AC055C8CB7BB9C43A2 /* libCIMLuaBindingLuaPanda.a */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = archive.ar; name = libCIMLuaBindingLuaPanda.a; path = "/Users/jean-luc/Library/Caches/com.celedev.CodeFlow/Programs/A7924406-7282-42AF-8634-D55F51035252/ExternalLibs/LuaPanda.luabindings/BindingLibs/libCIMLuaBindingLuaPanda.a"; sourceTree = "<absolute>"; };
+		57F336E6164C7D0CD850A4AE /* CIMLuaX.dylib */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "compiled.mach-o.dylib"; name = CIMLuaX.dylib; path = "/Users/jean-luc/Library/Application Support/com.celedev.CodeFlow/macosx/CIMLuaX.dylib"; sourceTree = "<absolute>"; };
+		5DABC6D4DDDB2B15BB166CB1 /* libCIMLuaBindingQuartzCore.dylib */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "compiled.mach-o.dylib"; name = libCIMLuaBindingQuartzCore.dylib; path = "/Users/jean-luc/Library/Application Support/com.celedev.CodeFlow/macosx/OSX-10.11.4-SDK.luabindings/BindingLibs/libCIMLuaBindingQuartzCore.dylib"; sourceTree = "<absolute>"; };
+		64D881587E352A8CE06323A1 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		6AF8EB277F8E7151B6CCFD25 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		6CC400268AB9BD69F680F424 /* libCIMLuaBindingCoreImage.dylib */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "compiled.mach-o.dylib"; name = libCIMLuaBindingCoreImage.dylib; path = "/Users/jean-luc/Library/Application Support/com.celedev.CodeFlow/macosx/OSX-10.11.4-SDK.luabindings/BindingLibs/libCIMLuaBindingCoreImage.dylib"; sourceTree = "<absolute>"; };
+		76C82D787CAB1B7F5189FF4E /* libCIMLuaBindingSceneKit.dylib */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "compiled.mach-o.dylib"; name = libCIMLuaBindingSceneKit.dylib; path = "/Users/jean-luc/Library/Application Support/com.celedev.CodeFlow/macosx/OSX-10.11.4-SDK.luabindings/BindingLibs/libCIMLuaBindingSceneKit.dylib"; sourceTree = "<absolute>"; };
+		782155876AA469E6337D44D1 /* libCIMLuaBindingSpriteKit.dylib */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "compiled.mach-o.dylib"; name = libCIMLuaBindingSpriteKit.dylib; path = "/Users/jean-luc/Library/Application Support/com.celedev.CodeFlow/macosx/OSX-10.11.4-SDK.luabindings/BindingLibs/libCIMLuaBindingSpriteKit.dylib"; sourceTree = "<absolute>"; };
+		7B0F8188F239ED3D803AF7A9 /* libCIMLuaBindingFoundation.dylib */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "compiled.mach-o.dylib"; name = libCIMLuaBindingFoundation.dylib; path = "/Users/jean-luc/Library/Application Support/com.celedev.CodeFlow/macosx/OSX-10.11.4-SDK.luabindings/BindingLibs/libCIMLuaBindingFoundation.dylib"; sourceTree = "<absolute>"; };
+		8105588BC5B74D75A7088386 /* libCIMLuaBindingAVFoundation.dylib */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "compiled.mach-o.dylib"; name = libCIMLuaBindingAVFoundation.dylib; path = "/Users/jean-luc/Library/Application Support/com.celedev.CodeFlow/macosx/OSX-10.11.4-SDK.luabindings/BindingLibs/libCIMLuaBindingAVFoundation.dylib"; sourceTree = "<absolute>"; };
+		84C23E120B3523607D0546F2 /* CloudKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CloudKit.framework; path = System/Library/Frameworks/CloudKit.framework; sourceTree = SDKROOT; };
+		8A66C436D77564723E911F98 /* SceneKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SceneKit.framework; path = System/Library/Frameworks/SceneKit.framework; sourceTree = SDKROOT; };
+		91233CC46A07BBF2A330B155 /* libCIMLuaBindingGLKit.dylib */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "compiled.mach-o.dylib"; name = libCIMLuaBindingGLKit.dylib; path = "/Users/jean-luc/Library/Application Support/com.celedev.CodeFlow/macosx/OSX-10.11.4-SDK.luabindings/BindingLibs/libCIMLuaBindingGLKit.dylib"; sourceTree = "<absolute>"; };
+		9840561063E5EB097F6B3BC2 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		9C8C46CE486204D3CE9E24BF /* GLKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GLKit.framework; path = System/Library/Frameworks/GLKit.framework; sourceTree = SDKROOT; };
+		9D1AF57126C6DE9926233D70 /* libCIMLuaBindingCoreAudio.dylib */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "compiled.mach-o.dylib"; name = libCIMLuaBindingCoreAudio.dylib; path = "/Users/jean-luc/Library/Application Support/com.celedev.CodeFlow/macosx/OSX-10.11.4-SDK.luabindings/BindingLibs/libCIMLuaBindingCoreAudio.dylib"; sourceTree = "<absolute>"; };
+		9FA394FD3959172996E63D76 /* CIMLuaDebugServerOSX.dylib */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "compiled.mach-o.dylib"; name = CIMLuaDebugServerOSX.dylib; path = "/Users/jean-luc/Library/Application Support/com.celedev.CodeFlow/macosx/CIMLuaDebugServerOSX.dylib"; sourceTree = "<absolute>"; };
+		A4132F3DBD89FE3F4E8A1567 /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
+		D75E5A0F6964D85991F01E6E /* libCIMLuaBindingAppKit.dylib */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "compiled.mach-o.dylib"; name = libCIMLuaBindingAppKit.dylib; path = "/Users/jean-luc/Library/Application Support/com.celedev.CodeFlow/macosx/OSX-10.11.4-SDK.luabindings/BindingLibs/libCIMLuaBindingAppKit.dylib"; sourceTree = "<absolute>"; };
+		E0BC2945182D5E4AD351CAC6 /* libCIMLuaBindingGameController.dylib */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "compiled.mach-o.dylib"; name = libCIMLuaBindingGameController.dylib; path = "/Users/jean-luc/Library/Application Support/com.celedev.CodeFlow/macosx/OSX-10.11.4-SDK.luabindings/BindingLibs/libCIMLuaBindingGameController.dylib"; sourceTree = "<absolute>"; };
+		E1024312C8D59917B7F415A1 /* libCIMLuaBindingAudioUnit.dylib */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "compiled.mach-o.dylib"; name = libCIMLuaBindingAudioUnit.dylib; path = "/Users/jean-luc/Library/Application Support/com.celedev.CodeFlow/macosx/OSX-10.11.4-SDK.luabindings/BindingLibs/libCIMLuaBindingAudioUnit.dylib"; sourceTree = "<absolute>"; };
+		E9DD7FB658C9D082E03D0B5E /* AudioUnit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioUnit.framework; path = System/Library/Frameworks/AudioUnit.framework; sourceTree = SDKROOT; };
+		EF487CAE0D5051AB1EDE6A13 /* SpriteKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SpriteKit.framework; path = System/Library/Frameworks/SpriteKit.framework; sourceTree = SDKROOT; };
+		F5BE5B286CDB4ED30A50E0DE /* GameController.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GameController.framework; path = System/Library/Frameworks/GameController.framework; sourceTree = SDKROOT; };
+		FD5C3EAD1D781E4A0007859C /* game.scnassets */ = {isa = PBXFileReference; lastKnownFileType = wrapper.scnassets; path = game.scnassets; sourceTree = "<group>"; };
+		FD5C3EAF1D781E4A0007859C /* congratulations.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = congratulations.png; sourceTree = "<group>"; };
+		FD5C3EB01D781E4A0007859C /* congratulations_pandaMax.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = congratulations_pandaMax.png; sourceTree = "<group>"; };
+		FD5C3EB11D781E4A0007859C /* dpad.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = dpad.png; sourceTree = "<group>"; };
+		FD5C3EB21D781E4A0007859C /* FlowerEmpty.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = FlowerEmpty.png; sourceTree = "<group>"; };
+		FD5C3EB31D781E4A0007859C /* FlowerFull.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = FlowerFull.png; sourceTree = "<group>"; };
+		FD5C3EB41D781E4A0007859C /* ItemsPearl.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ItemsPearl.png; sourceTree = "<group>"; };
+		FD5C3EB51D781E4A0007859C /* MaxIcon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = MaxIcon.png; sourceTree = "<group>"; };
+		FD5C3EB71D781E4A0007859C /* collect.scnp */ = {isa = PBXFileReference; lastKnownFileType = file.scp; path = collect.scnp; sourceTree = "<group>"; };
+		FD5C3EB81D781E4A0007859C /* confetti.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = confetti.png; sourceTree = "<group>"; };
+		FD5C3EB91D781E4A0007859C /* confetti.scnp */ = {isa = PBXFileReference; lastKnownFileType = file.scp; path = confetti.scnp; sourceTree = "<group>"; };
+		FD5C3EBA1D781E4A0007859C /* glow01.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = glow01.png; sourceTree = "<group>"; };
+		FD5C3EC71D781FE40007859C /* GameView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GameView.swift; sourceTree = "<group>"; };
+		FD5C3EC91D7823C20007859C /* GameControls.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GameControls.swift; sourceTree = "<group>"; };
+		FD5C3ECB1D782BEB0007859C /* SceneKitExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SceneKitExtensions.swift; sourceTree = "<group>"; };
+		FD7025BA1CBA8CAE00BB305A /* LuaPanda.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LuaPanda.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		FD7025BD1CBA8CAE00BB305A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		FD7025BF1CBA8CAE00BB305A /* GameViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameViewController.swift; sourceTree = "<group>"; };
+		FD7025C11CBA8CAE00BB305A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		FD7025C41CBA8CAE00BB305A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		FD7025C61CBA8CAE00BB305A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FD7025CC1CBA8CEA00BB305A /* LuaPanda-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "LuaPanda-Bridging-Header.h"; sourceTree = "<group>"; };
+		FDF564D61D8C08CF00350D57 /* sounds */ = {isa = PBXFileReference; lastKnownFileType = folder; path = sounds; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		FD7025B71CBA8CAE00BB305A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0D213A166EE8FD56AF60F7CB /* CIMLuaX.dylib in Frameworks */,
+				D28B69F76BB1837E66C607CB /* CIMLuaDebugServerOSX.dylib in Frameworks */,
+				C83C92240850D1E8A10FA5BE /* CoreGraphics.framework in Frameworks */,
+				D695F0058454E362E34D4ECB /* Foundation.framework in Frameworks */,
+				C2CBD6EFB38CADF125950BD6 /* CoreImage.framework in Frameworks */,
+				0A28B74544810B034F5FD7E1 /* QuartzCore.framework in Frameworks */,
+				8A214FE25B57BA9A789B7D1D /* AppKit.framework in Frameworks */,
+				C6FD86D4CCD1A0602983B226 /* CoreAudio.framework in Frameworks */,
+				F05B46CD359887A66B65B239 /* SceneKit.framework in Frameworks */,
+				ACC9253CC9B932B734BE33CF /* Metal.framework in Frameworks */,
+				F91125DB4A1C841DE68CD4B4 /* SpriteKit.framework in Frameworks */,
+				11E458D4A87D4BB7633484D4 /* AVFoundation.framework in Frameworks */,
+				E7D92BF28F9DDE7F5E8DBE05 /* GLKit.framework in Frameworks */,
+				59F12AF596B04A52D1959E80 /* AudioUnit.framework in Frameworks */,
+				E3803B2E105A525AE2248D42 /* GameController.framework in Frameworks */,
+				E54A0DED9717F9D6FA1BE48C /* CloudKit.framework in Frameworks */,
+				51073410134C7BB6D83798AA /* AudioToolbox.framework in Frameworks */,
+				6A3189A0DFF7E7D9257413E1 /* libCIMLuaBindingOsX.dylib in Frameworks */,
+				B47CCBD3B7D39F9155850464 /* libCIMLuaBindingAVFoundation.dylib in Frameworks */,
+				F645FA2D9224124A9154501C /* libCIMLuaBindingSpriteKit.dylib in Frameworks */,
+				4C6DED2EB23FEBB0A3965396 /* libCIMLuaBindingCoreAudio.dylib in Frameworks */,
+				96768975AE36A5D1CD1227AE /* libCIMLuaBindingCoreGraphics.dylib in Frameworks */,
+				7E1C5D8FBBF5B407E7F6E39C /* libCIMLuaBindingGLKit.dylib in Frameworks */,
+				1DB3240931C55F0A3EB2163B /* libCIMLuaBindingFoundation.dylib in Frameworks */,
+				024081FB50A1388DACADCEEF /* libCIMLuaBindingCoreImage.dylib in Frameworks */,
+				12F50FF3121348BBCB994508 /* libCIMLuaBindingQuartzCore.dylib in Frameworks */,
+				E73CFAAA10A0440CE1FF12DF /* libCIMLuaBindingAudioUnit.dylib in Frameworks */,
+				F612C31D00FEDEFA3FA0ECDE /* libCIMLuaBindingSceneKit.dylib in Frameworks */,
+				D0A6C1D35127EB11237E3B59 /* libCIMLuaBindingMetal.dylib in Frameworks */,
+				A754A6580EEDDBCE9536034A /* libCIMLuaBindingAppKit.dylib in Frameworks */,
+				BB035B0BA22C22B152050AA3 /* libCIMLuaBindingGameController.dylib in Frameworks */,
+				88DE73797B8CB9118513F2F9 /* libCIMLuaBindingLuaPanda.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		0C2F54F9C62DDF1F75329E2E /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				57F336E6164C7D0CD850A4AE /* CIMLuaX.dylib */,
+				9FA394FD3959172996E63D76 /* CIMLuaDebugServerOSX.dylib */,
+				64D881587E352A8CE06323A1 /* CoreGraphics.framework */,
+				9840561063E5EB097F6B3BC2 /* Foundation.framework */,
+				22A5F840A7E7E74DF2383F1A /* CoreImage.framework */,
+				6AF8EB277F8E7151B6CCFD25 /* QuartzCore.framework */,
+				2A3CA79B3B9E8E9B0759D9FF /* AppKit.framework */,
+				40EE32DD41CE27DED53F6CEE /* CoreAudio.framework */,
+				8A66C436D77564723E911F98 /* SceneKit.framework */,
+				313CDF7A3202890F433C39C4 /* Metal.framework */,
+				EF487CAE0D5051AB1EDE6A13 /* SpriteKit.framework */,
+				0595C73A1E48508C8F70B687 /* AVFoundation.framework */,
+				9C8C46CE486204D3CE9E24BF /* GLKit.framework */,
+				E9DD7FB658C9D082E03D0B5E /* AudioUnit.framework */,
+				F5BE5B286CDB4ED30A50E0DE /* GameController.framework */,
+				84C23E120B3523607D0546F2 /* CloudKit.framework */,
+				A4132F3DBD89FE3F4E8A1567 /* AudioToolbox.framework */,
+				09A964383E37206E3D95DB9F /* libCIMLuaBindingOsX.dylib */,
+				8105588BC5B74D75A7088386 /* libCIMLuaBindingAVFoundation.dylib */,
+				782155876AA469E6337D44D1 /* libCIMLuaBindingSpriteKit.dylib */,
+				9D1AF57126C6DE9926233D70 /* libCIMLuaBindingCoreAudio.dylib */,
+				1200258535E6CA0F77B7E479 /* libCIMLuaBindingCoreGraphics.dylib */,
+				91233CC46A07BBF2A330B155 /* libCIMLuaBindingGLKit.dylib */,
+				7B0F8188F239ED3D803AF7A9 /* libCIMLuaBindingFoundation.dylib */,
+				6CC400268AB9BD69F680F424 /* libCIMLuaBindingCoreImage.dylib */,
+				5DABC6D4DDDB2B15BB166CB1 /* libCIMLuaBindingQuartzCore.dylib */,
+				E1024312C8D59917B7F415A1 /* libCIMLuaBindingAudioUnit.dylib */,
+				76C82D787CAB1B7F5189FF4E /* libCIMLuaBindingSceneKit.dylib */,
+				0F9082E0CE59D8FA510742EA /* libCIMLuaBindingMetal.dylib */,
+				D75E5A0F6964D85991F01E6E /* libCIMLuaBindingAppKit.dylib */,
+				E0BC2945182D5E4AD351CAC6 /* libCIMLuaBindingGameController.dylib */,
+				524304AC055C8CB7BB9C43A2 /* libCIMLuaBindingLuaPanda.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		FD5C3EAC1D781E4A0007859C /* Game assets */ = {
+			isa = PBXGroup;
+			children = (
+				FD5C3EAD1D781E4A0007859C /* game.scnassets */,
+				FDF564D61D8C08CF00350D57 /* sounds */,
+				FD5C3EAE1D781E4A0007859C /* Overlays */,
+				FD5C3EB61D781E4A0007859C /* Particle systems */,
+			);
+			path = "Game assets";
+			sourceTree = "<group>";
+		};
+		FD5C3EAE1D781E4A0007859C /* Overlays */ = {
+			isa = PBXGroup;
+			children = (
+				FD5C3EAF1D781E4A0007859C /* congratulations.png */,
+				FD5C3EB01D781E4A0007859C /* congratulations_pandaMax.png */,
+				FD5C3EB11D781E4A0007859C /* dpad.png */,
+				FD5C3EB21D781E4A0007859C /* FlowerEmpty.png */,
+				FD5C3EB31D781E4A0007859C /* FlowerFull.png */,
+				FD5C3EB41D781E4A0007859C /* ItemsPearl.png */,
+				FD5C3EB51D781E4A0007859C /* MaxIcon.png */,
+			);
+			path = Overlays;
+			sourceTree = "<group>";
+		};
+		FD5C3EB61D781E4A0007859C /* Particle systems */ = {
+			isa = PBXGroup;
+			children = (
+				FD5C3EB71D781E4A0007859C /* collect.scnp */,
+				FD5C3EBA1D781E4A0007859C /* glow01.png */,
+				FD5C3EB81D781E4A0007859C /* confetti.png */,
+				FD5C3EB91D781E4A0007859C /* confetti.scnp */,
+			);
+			path = "Particle systems";
+			sourceTree = "<group>";
+		};
+		FD7025B11CBA8CAE00BB305A = {
+			isa = PBXGroup;
+			children = (
+				FD7025BC1CBA8CAE00BB305A /* LuaPanda */,
+				FD7025BB1CBA8CAE00BB305A /* Products */,
+				0C2F54F9C62DDF1F75329E2E /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		FD7025BB1CBA8CAE00BB305A /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				FD7025BA1CBA8CAE00BB305A /* LuaPanda.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		FD7025BC1CBA8CAE00BB305A /* LuaPanda */ = {
+			isa = PBXGroup;
+			children = (
+				FD7025BD1CBA8CAE00BB305A /* AppDelegate.swift */,
+				FD7025BF1CBA8CAE00BB305A /* GameViewController.swift */,
+				FD5C3EC91D7823C20007859C /* GameControls.swift */,
+				FD5C3EC71D781FE40007859C /* GameView.swift */,
+				FD5C3ECB1D782BEB0007859C /* SceneKitExtensions.swift */,
+				FD5C3EAC1D781E4A0007859C /* Game assets */,
+				FD7025C11CBA8CAE00BB305A /* Assets.xcassets */,
+				FD7025C31CBA8CAE00BB305A /* Main.storyboard */,
+				FD7025CC1CBA8CEA00BB305A /* LuaPanda-Bridging-Header.h */,
+				FD7025C61CBA8CAE00BB305A /* Info.plist */,
+			);
+			path = LuaPanda;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		FD7025B91CBA8CAE00BB305A /* LuaPanda */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FD7025C91CBA8CAE00BB305A /* Build configuration list for PBXNativeTarget "LuaPanda" */;
+			buildPhases = (
+				FD7025B61CBA8CAE00BB305A /* Sources */,
+				FD7025B71CBA8CAE00BB305A /* Frameworks */,
+				FD7025B81CBA8CAE00BB305A /* Resources */,
+				04344CA5E7796BE2C7227BAB /* Copy CIMLua Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = LuaPanda;
+			productName = CocoaSimpleApp;
+			productReference = FD7025BA1CBA8CAE00BB305A /* LuaPanda.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		FD7025B21CBA8CAE00BB305A /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0730;
+				LastUpgradeCheck = 0800;
+				ORGANIZATIONNAME = Celedev;
+				TargetAttributes = {
+					FD7025B91CBA8CAE00BB305A = {
+						CreatedOnToolsVersion = 7.3;
+						LastSwiftMigration = 0800;
+					};
+				};
+			};
+			buildConfigurationList = FD7025B51CBA8CAE00BB305A /* Build configuration list for PBXProject "LuaPanda" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = FD7025B11CBA8CAE00BB305A;
+			productRefGroup = FD7025BB1CBA8CAE00BB305A /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				FD7025B91CBA8CAE00BB305A /* LuaPanda */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		FD7025B81CBA8CAE00BB305A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FD5C3EBD1D781E4A0007859C /* congratulations_pandaMax.png in Resources */,
+				FD5C3EC51D781E4A0007859C /* confetti.scnp in Resources */,
+				FD7025C21CBA8CAE00BB305A /* Assets.xcassets in Resources */,
+				FD5C3EC11D781E4A0007859C /* ItemsPearl.png in Resources */,
+				FD5C3EBE1D781E4A0007859C /* dpad.png in Resources */,
+				FDF564D71D8C08CF00350D57 /* sounds in Resources */,
+				FD5C3EC01D781E4A0007859C /* FlowerFull.png in Resources */,
+				FD5C3EBF1D781E4A0007859C /* FlowerEmpty.png in Resources */,
+				FD7025C51CBA8CAE00BB305A /* Main.storyboard in Resources */,
+				FD5C3EBB1D781E4A0007859C /* game.scnassets in Resources */,
+				FD5C3EC61D781E4A0007859C /* glow01.png in Resources */,
+				FD5C3EC31D781E4A0007859C /* collect.scnp in Resources */,
+				FD5C3EBC1D781E4A0007859C /* congratulations.png in Resources */,
+				FD5C3EC21D781E4A0007859C /* MaxIcon.png in Resources */,
+				FD5C3EC41D781E4A0007859C /* confetti.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		FD7025B61CBA8CAE00BB305A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FD7025C01CBA8CAE00BB305A /* GameViewController.swift in Sources */,
+				FD5C3ECC1D782BEB0007859C /* SceneKitExtensions.swift in Sources */,
+				FD5C3EC81D781FE40007859C /* GameView.swift in Sources */,
+				FD7025BE1CBA8CAE00BB305A /* AppDelegate.swift in Sources */,
+				FD5C3ECA1D7823C20007859C /* GameControls.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		FD7025C31CBA8CAE00BB305A /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				FD7025C41CBA8CAE00BB305A /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		FD7025C71CBA8CAE00BB305A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		FD7025C81CBA8CAE00BB305A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				SDKROOT = macosx;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+			};
+			name = Release;
+		};
+		FD7025CA1CBA8CAE00BB305A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				COMBINE_HIDPI_IMAGES = YES;
+				HEADER_SEARCH_PATHS = "$(USER_LIBRARY_DIR)/Application\\ Support/com.celedev.CodeFlow/headers";
+				INFOPLIST_FILE = LuaPanda/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(USER_LIBRARY_DIR)/Application\\ Support/com.celedev.CodeFlow/macosx",
+					"$(USER_LIBRARY_DIR)/Application\\ Support/com.celedev.CodeFlow/macosx/OSX-10.11.4-SDK.luabindings/BindingLibs",
+					"$(USER_LIBRARY_DIR)/Caches/com.celedev.CodeFlow/Programs/A7924406-7282-42AF-8634-D55F51035252/ExternalLibs/LuaPanda.luabindings/BindingLibs",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.11;
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_BUNDLE_IDENTIFIER = com.celedev.LuaPanda;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "LuaPanda/LuaPanda-Bridging-Header.h";
+				SWIFT_VERSION = 2.3;
+			};
+			name = Debug;
+		};
+		FD7025CB1CBA8CAE00BB305A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				COMBINE_HIDPI_IMAGES = YES;
+				HEADER_SEARCH_PATHS = "$(USER_LIBRARY_DIR)/Application\\ Support/com.celedev.CodeFlow/headers";
+				INFOPLIST_FILE = LuaPanda/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(USER_LIBRARY_DIR)/Application\\ Support/com.celedev.CodeFlow/macosx",
+					"$(USER_LIBRARY_DIR)/Application\\ Support/com.celedev.CodeFlow/macosx/OSX-10.11.4-SDK.luabindings/BindingLibs",
+					"$(USER_LIBRARY_DIR)/Caches/com.celedev.CodeFlow/Programs/A7924406-7282-42AF-8634-D55F51035252/ExternalLibs/LuaPanda.luabindings/BindingLibs",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.11;
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_BUNDLE_IDENTIFIER = com.celedev.LuaPanda;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "LuaPanda/LuaPanda-Bridging-Header.h";
+				SWIFT_VERSION = 2.3;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		FD7025B51CBA8CAE00BB305A /* Build configuration list for PBXProject "LuaPanda" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FD7025C71CBA8CAE00BB305A /* Debug */,
+				FD7025C81CBA8CAE00BB305A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FD7025C91CBA8CAE00BB305A /* Build configuration list for PBXNativeTarget "LuaPanda" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FD7025CA1CBA8CAE00BB305A /* Debug */,
+				FD7025CB1CBA8CAE00BB305A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = FD7025B21CBA8CAE00BB305A /* Project object */;
+}
