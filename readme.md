@@ -7,6 +7,14 @@ You run the character —a red panda— in a 3D scene, with the arrow keys, and 
 
 ![Updating LuaPanda](readme-images/LuaPanda-screenshot.jpeg)
 
+But the really interesting part is what is inside the box.
+
+This code sample shows how to mix dynamic code update and dynamic SceneKit assets in an application, so you can change basically anything in the game while it is running, without leaving the current game state. 
+
+For example, if you change a 3D model in the `game.scnassets` directory, the SceneKit scenes are automatically recompiled and reloaded into the application. Then the Lua code in the app just has to update the SCNScene objects and re-apply the current game state information to the scene. 
+
+All this update process only takes a few seconds to run, therefore it is way much faster and more interactive than the traditional change-compile-run process for game development. And changes in (dynamic) Lua code are applied even faster (typically in less than one second).
+
 ## Configuration required
 
 A Mac with Celedev CodeFlow version 1.0.3 or later, and Xcode 7 or later.
