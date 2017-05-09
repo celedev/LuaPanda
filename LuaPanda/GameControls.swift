@@ -20,17 +20,17 @@ import GameController
 }
     
 private enum KeyboardDirection : UInt16 {
-    case Left   = 123
-    case Right  = 124
-    case Down   = 125
-    case Up     = 126
+    case left   = 123
+    case right  = 124
+    case down   = 125
+    case up     = 126
     
     var vector : float2 {
         switch self {
-        case .Up:    return float2( 0, -1)
-        case .Down:  return float2( 0,  1)
-        case .Left:  return float2(-1,  0)
-        case .Right: return float2( 1,  0)
+        case .up:    return float2( 0, -1)
+        case .down:  return float2( 0,  1)
+        case .left:  return float2(-1,  0)
+        case .right: return float2( 1,  0)
         }
     }
 }
@@ -67,12 +67,12 @@ extension GameViewController {
         gameView.eventsDelegate = self
         #endif
         
-        NSNotificationCenter.defaultCenter().addObserver(self, selector: #selector(GameViewController.handleControllerDidConnectNotification(_:)), name: GCControllerDidConnectNotification, object: nil)
+        NotificationCenter.default.addObserver(self, selector: #selector(GameViewController.handleControllerDidConnectNotification(_:)), name: NSNotification.Name.GCControllerDidConnect, object: nil)
     }
     
-    @objc func handleControllerDidConnectNotification(notification: NSNotification) {
+    @objc func handleControllerDidConnectNotification(_ notification: Notification) {
         let gameController = notification.object as! GCController
-        registerCharacterMovementEvents(gameController)
+        registerCharacterMovementEvents(gameController: gameController)
     }
     
     private func registerCharacterMovementEvents(gameController: GCController) {
@@ -170,13 +170,13 @@ extension GameViewController {
     
     func mouseDown(view: NSView, theEvent: NSEvent) -> Bool {
         // Remember last mouse position for dragging.
-        lastMousePosition = float2(view.convertPoint(theEvent.locationInWindow, fromView: nil))
+        lastMousePosition = float2(view.convert(theEvent.locationInWindow, from: nil))
         
         return true
     }
     
     func mouseDragged(view: NSView, theEvent: NSEvent) -> Bool {
-        let mousePosition = float2(view.convertPoint(theEvent.locationInWindow, fromView: nil))
+        let mousePosition = float2(view.convert(theEvent.locationInWindow, from: nil))
         let mouseDirection = mousePosition - lastMousePosition
         (self as GameControlsHandler).panCamera?(dx: mouseDirection.x, dy: mouseDirection.y)
         lastMousePosition = mousePosition
@@ -190,7 +190,7 @@ extension GameViewController {
     
     func keyDown(view: NSView, theEvent: NSEvent) -> Bool {
         if let direction = KeyboardDirection(rawValue: theEvent.keyCode) {
-            if !theEvent.ARepeat {
+            if !theEvent.isARepeat {
                 controllerStoredDirection += direction.vector
             }
             return true
@@ -201,7 +201,7 @@ extension GameViewController {
     
     func keyUp(view: NSView, theEvent: NSEvent) -> Bool {
         if let direction = KeyboardDirection(rawValue: theEvent.keyCode) {
-            if !theEvent.ARepeat {
+            if !theEvent.isARepeat {
                 controllerStoredDirection -= direction.vector
             }
             return true

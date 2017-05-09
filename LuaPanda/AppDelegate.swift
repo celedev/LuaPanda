@@ -11,8 +11,7 @@ class AppDelegate: NSObject, NSApplicationDelegate {
     private var luaContext: CIMLuaContext?
     private var contextMonitor: CIMLuaContextMonitor?
 
-
-    func applicationDidFinishLaunching(aNotification: NSNotification) {
+    func applicationDidFinishLaunching(_ notification: Notification) {
         // Insert code here to initialize your application
         
         // CIMLuaContext.declareObjcMethodsInvocationLockProtectedClass(NSKeyedUnarchiver)
@@ -24,11 +23,11 @@ class AppDelegate: NSObject, NSApplicationDelegate {
         
     }
 
-    func applicationWillTerminate(aNotification: NSNotification) {
+    func applicationWillTerminate(_ aNotification: Notification) {
         // Insert code here to tear down your application
     }
 
-    func applicationShouldTerminateAfterLastWindowClosed(sender: NSApplication) -> Bool {
+    func applicationShouldTerminateAfterLastWindowClosed(_ sender: NSApplication) -> Bool {
         return true
     }
 

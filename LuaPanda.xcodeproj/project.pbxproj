@@ -7,53 +7,38 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		024081FB50A1388DACADCEEF /* libCIMLuaBindingCoreImage.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 6CC400268AB9BD69F680F424 /* libCIMLuaBindingCoreImage.dylib */; };
-		0467DC0087CD0FDA917EBD02 /* libCIMLuaBindingAppKit.dylib in Copy CIMLua Frameworks */ = {isa = PBXBuildFile; fileRef = D75E5A0F6964D85991F01E6E /* libCIMLuaBindingAppKit.dylib */; };
 		0A28B74544810B034F5FD7E1 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6AF8EB277F8E7151B6CCFD25 /* QuartzCore.framework */; };
-		0B39CBD90BAA816293210BF2 /* libCIMLuaBindingCoreImage.dylib in Copy CIMLua Frameworks */ = {isa = PBXBuildFile; fileRef = 6CC400268AB9BD69F680F424 /* libCIMLuaBindingCoreImage.dylib */; };
 		0D213A166EE8FD56AF60F7CB /* CIMLuaX.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 57F336E6164C7D0CD850A4AE /* CIMLuaX.dylib */; };
 		11E458D4A87D4BB7633484D4 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0595C73A1E48508C8F70B687 /* AVFoundation.framework */; };
-		12F50FF3121348BBCB994508 /* libCIMLuaBindingQuartzCore.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 5DABC6D4DDDB2B15BB166CB1 /* libCIMLuaBindingQuartzCore.dylib */; };
-		168D5DA88058C373B102ECED /* libCIMLuaBindingAVFoundation.dylib in Copy CIMLua Frameworks */ = {isa = PBXBuildFile; fileRef = 8105588BC5B74D75A7088386 /* libCIMLuaBindingAVFoundation.dylib */; };
-		1DB3240931C55F0A3EB2163B /* libCIMLuaBindingFoundation.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 7B0F8188F239ED3D803AF7A9 /* libCIMLuaBindingFoundation.dylib */; };
-		1F93E23965C2BB1313C92E79 /* libCIMLuaBindingFoundation.dylib in Copy CIMLua Frameworks */ = {isa = PBXBuildFile; fileRef = 7B0F8188F239ED3D803AF7A9 /* libCIMLuaBindingFoundation.dylib */; };
-		3ED1D6E01CC47FA81258EF6B /* libCIMLuaBindingOsX.dylib in Copy CIMLua Frameworks */ = {isa = PBXBuildFile; fileRef = 09A964383E37206E3D95DB9F /* libCIMLuaBindingOsX.dylib */; };
-		4149578CFCF6E771C02D9BCB /* CIMLuaX.dylib in Copy CIMLua Frameworks */ = {isa = PBXBuildFile; fileRef = 57F336E6164C7D0CD850A4AE /* CIMLuaX.dylib */; };
-		4C6DED2EB23FEBB0A3965396 /* libCIMLuaBindingCoreAudio.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 9D1AF57126C6DE9926233D70 /* libCIMLuaBindingCoreAudio.dylib */; };
+		2560F889F805CDD0D9F9D0F4 /* CIMLuaDebugServerOSX.dylib in Copy CIMLua Frameworks */ = {isa = PBXBuildFile; fileRef = 9FA394FD3959172996E63D76 /* CIMLuaDebugServerOSX.dylib */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
+		34201AF2BDC03D973BC2E587 /* libCIMLuaBindingSceneKit.a in Frameworks */ = {isa = PBXBuildFile; fileRef = B143E31FA1C4510A9D012D2C /* libCIMLuaBindingSceneKit.a */; };
+		387202944A03DB8DDB2EEF55 /* libCIMLuaBindingCoreGraphics.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D6C5BF1FF8CB6E4F7A76E21C /* libCIMLuaBindingCoreGraphics.a */; };
+		47139ADBCAE93FEFE0BAE459 /* libCIMLuaBindingAppKit.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 6688CD006858C7C145D1FB64 /* libCIMLuaBindingAppKit.a */; };
 		51073410134C7BB6D83798AA /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A4132F3DBD89FE3F4E8A1567 /* AudioToolbox.framework */; };
-		56D2E5484CAB2B39B628666D /* libCIMLuaBindingCoreAudio.dylib in Copy CIMLua Frameworks */ = {isa = PBXBuildFile; fileRef = 9D1AF57126C6DE9926233D70 /* libCIMLuaBindingCoreAudio.dylib */; };
-		56DE84CCAE0CCDC3525E82C5 /* libCIMLuaBindingAudioUnit.dylib in Copy CIMLua Frameworks */ = {isa = PBXBuildFile; fileRef = E1024312C8D59917B7F415A1 /* libCIMLuaBindingAudioUnit.dylib */; };
+		5261D79C7210B0C810FF0CD1 /* libCIMLuaBindingCloudKit.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A68C29366E367B63E195BB87 /* libCIMLuaBindingCloudKit.a */; };
 		59F12AF596B04A52D1959E80 /* AudioUnit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E9DD7FB658C9D082E03D0B5E /* AudioUnit.framework */; };
-		65D007784DDEEED1CB78CC63 /* libCIMLuaBindingCoreGraphics.dylib in Copy CIMLua Frameworks */ = {isa = PBXBuildFile; fileRef = 1200258535E6CA0F77B7E479 /* libCIMLuaBindingCoreGraphics.dylib */; };
-		6A3189A0DFF7E7D9257413E1 /* libCIMLuaBindingOsX.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 09A964383E37206E3D95DB9F /* libCIMLuaBindingOsX.dylib */; };
-		7E1C5D8FBBF5B407E7F6E39C /* libCIMLuaBindingGLKit.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 91233CC46A07BBF2A330B155 /* libCIMLuaBindingGLKit.dylib */; };
-		88DE73797B8CB9118513F2F9 /* libCIMLuaBindingLuaPanda.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 524304AC055C8CB7BB9C43A2 /* libCIMLuaBindingLuaPanda.a */; };
+		61CFDD0FFC2AEA9C99A2AE73 /* libCIMLuaBindingAudioToolbox.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 030974E9452F80E50C7E825B /* libCIMLuaBindingAudioToolbox.a */; };
+		68DD3AFC7F82EBE988C4DBCC /* libCIMLuaBindingmacOS.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 081651223B42FE2853745074 /* libCIMLuaBindingmacOS.a */; };
+		88DC1EEB09383A7DA8D8F2CD /* libCIMLuaBindingGLKit.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A4D76389EC4C2E365D37278D /* libCIMLuaBindingGLKit.a */; };
 		8A214FE25B57BA9A789B7D1D /* AppKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2A3CA79B3B9E8E9B0759D9FF /* AppKit.framework */; };
-		96768975AE36A5D1CD1227AE /* libCIMLuaBindingCoreGraphics.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 1200258535E6CA0F77B7E479 /* libCIMLuaBindingCoreGraphics.dylib */; };
-		96C5240093D19ADBB053E83E /* libCIMLuaBindingSceneKit.dylib in Copy CIMLua Frameworks */ = {isa = PBXBuildFile; fileRef = 76C82D787CAB1B7F5189FF4E /* libCIMLuaBindingSceneKit.dylib */; };
-		9D5906A6F348E43E90514B97 /* libCIMLuaBindingQuartzCore.dylib in Copy CIMLua Frameworks */ = {isa = PBXBuildFile; fileRef = 5DABC6D4DDDB2B15BB166CB1 /* libCIMLuaBindingQuartzCore.dylib */; };
-		A69A9FCBB08427121E4B385D /* libCIMLuaBindingGameController.dylib in Copy CIMLua Frameworks */ = {isa = PBXBuildFile; fileRef = E0BC2945182D5E4AD351CAC6 /* libCIMLuaBindingGameController.dylib */; };
-		A754A6580EEDDBCE9536034A /* libCIMLuaBindingAppKit.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = D75E5A0F6964D85991F01E6E /* libCIMLuaBindingAppKit.dylib */; };
+		A2385E706630626243CFD6AB /* libCIMLuaBindingGameController.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 34D9A800CD25879990657439 /* libCIMLuaBindingGameController.a */; };
+		A72356EE59723FD32A6D3D33 /* libCIMLuaBindingCoreAudio.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 2A8CCC331DF26B0B35696C80 /* libCIMLuaBindingCoreAudio.a */; };
+		A8DC39A920E439AD88E4A1D0 /* libCIMLuaBindingFoundation.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D48A2092AC2EF236640E8877 /* libCIMLuaBindingFoundation.a */; };
 		ACC9253CC9B932B734BE33CF /* Metal.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 313CDF7A3202890F433C39C4 /* Metal.framework */; };
-		B47CCBD3B7D39F9155850464 /* libCIMLuaBindingAVFoundation.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 8105588BC5B74D75A7088386 /* libCIMLuaBindingAVFoundation.dylib */; };
-		B52C962E940FE36C66D9D563 /* libCIMLuaBindingGLKit.dylib in Copy CIMLua Frameworks */ = {isa = PBXBuildFile; fileRef = 91233CC46A07BBF2A330B155 /* libCIMLuaBindingGLKit.dylib */; };
-		BB035B0BA22C22B152050AA3 /* libCIMLuaBindingGameController.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = E0BC2945182D5E4AD351CAC6 /* libCIMLuaBindingGameController.dylib */; };
+		B5A47F7CFBE565AF7F1B3F7D /* libCIMLuaBindingSpriteKit.a in Frameworks */ = {isa = PBXBuildFile; fileRef = BECD1BECEDCFF9A4E4309DE4 /* libCIMLuaBindingSpriteKit.a */; };
+		BC03319B6EA00AB62EC4C414 /* libCIMLuaBindingQuartzCore.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 79DD49CE378AECE7EB3C800C /* libCIMLuaBindingQuartzCore.a */; };
 		C2CBD6EFB38CADF125950BD6 /* CoreImage.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 22A5F840A7E7E74DF2383F1A /* CoreImage.framework */; };
-		C3FBE8AED34009AC9D96FDEA /* libCIMLuaBindingMetal.dylib in Copy CIMLua Frameworks */ = {isa = PBXBuildFile; fileRef = 0F9082E0CE59D8FA510742EA /* libCIMLuaBindingMetal.dylib */; };
 		C6FD86D4CCD1A0602983B226 /* CoreAudio.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 40EE32DD41CE27DED53F6CEE /* CoreAudio.framework */; };
 		C83C92240850D1E8A10FA5BE /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 64D881587E352A8CE06323A1 /* CoreGraphics.framework */; };
-		D0A6C1D35127EB11237E3B59 /* libCIMLuaBindingMetal.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 0F9082E0CE59D8FA510742EA /* libCIMLuaBindingMetal.dylib */; };
-		D0C00680535272FD021EE3B0 /* libCIMLuaBindingSpriteKit.dylib in Copy CIMLua Frameworks */ = {isa = PBXBuildFile; fileRef = 782155876AA469E6337D44D1 /* libCIMLuaBindingSpriteKit.dylib */; };
+		C8ED16072E6D6607B64449E2 /* libCIMLuaBindingMetal.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A389A7CB44FC3B5687529960 /* libCIMLuaBindingMetal.a */; };
 		D28B69F76BB1837E66C607CB /* CIMLuaDebugServerOSX.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 9FA394FD3959172996E63D76 /* CIMLuaDebugServerOSX.dylib */; };
+		D644A78A3EE2DF4131D53FB6 /* CIMLuaX.dylib in Copy CIMLua Frameworks */ = {isa = PBXBuildFile; fileRef = 57F336E6164C7D0CD850A4AE /* CIMLuaX.dylib */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
 		D695F0058454E362E34D4ECB /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9840561063E5EB097F6B3BC2 /* Foundation.framework */; };
-		DCAF1427FB480A67B5CC89ED /* CIMLuaDebugServerOSX.dylib in Copy CIMLua Frameworks */ = {isa = PBXBuildFile; fileRef = 9FA394FD3959172996E63D76 /* CIMLuaDebugServerOSX.dylib */; };
 		E3803B2E105A525AE2248D42 /* GameController.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F5BE5B286CDB4ED30A50E0DE /* GameController.framework */; };
 		E54A0DED9717F9D6FA1BE48C /* CloudKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 84C23E120B3523607D0546F2 /* CloudKit.framework */; };
-		E73CFAAA10A0440CE1FF12DF /* libCIMLuaBindingAudioUnit.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = E1024312C8D59917B7F415A1 /* libCIMLuaBindingAudioUnit.dylib */; };
 		E7D92BF28F9DDE7F5E8DBE05 /* GLKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9C8C46CE486204D3CE9E24BF /* GLKit.framework */; };
 		F05B46CD359887A66B65B239 /* SceneKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8A66C436D77564723E911F98 /* SceneKit.framework */; };
-		F612C31D00FEDEFA3FA0ECDE /* libCIMLuaBindingSceneKit.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 76C82D787CAB1B7F5189FF4E /* libCIMLuaBindingSceneKit.dylib */; };
-		F645FA2D9224124A9154501C /* libCIMLuaBindingSpriteKit.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 782155876AA469E6337D44D1 /* libCIMLuaBindingSpriteKit.dylib */; };
+		F342C18D1A7A6FB3F9A7EEE3 /* libCIMLuaBindingLuaPanda.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 72A16D9B4CB3EF7D026BC7B1 /* libCIMLuaBindingLuaPanda.a */; };
 		F91125DB4A1C841DE68CD4B4 /* SpriteKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EF487CAE0D5051AB1EDE6A13 /* SpriteKit.framework */; };
 		FD5C3EBB1D781E4A0007859C /* game.scnassets in Resources */ = {isa = PBXBuildFile; fileRef = FD5C3EAD1D781E4A0007859C /* game.scnassets */; };
 		FD5C3EBC1D781E4A0007859C /* congratulations.png in Resources */ = {isa = PBXBuildFile; fileRef = FD5C3EAF1D781E4A0007859C /* congratulations.png */; };
@@ -75,6 +60,7 @@
 		FD7025C21CBA8CAE00BB305A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FD7025C11CBA8CAE00BB305A /* Assets.xcassets */; };
 		FD7025C51CBA8CAE00BB305A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FD7025C31CBA8CAE00BB305A /* Main.storyboard */; };
 		FDF564D71D8C08CF00350D57 /* sounds in Resources */ = {isa = PBXBuildFile; fileRef = FDF564D61D8C08CF00350D57 /* sounds */; };
+		FF09EBD7D14CBB9C0A3A74AC /* libCIMLuaBindingCoreImage.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 853466AA8CA1E59962DDBCE0 /* libCIMLuaBindingCoreImage.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -84,22 +70,8 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				4149578CFCF6E771C02D9BCB /* CIMLuaX.dylib in Copy CIMLua Frameworks */,
-				DCAF1427FB480A67B5CC89ED /* CIMLuaDebugServerOSX.dylib in Copy CIMLua Frameworks */,
-				3ED1D6E01CC47FA81258EF6B /* libCIMLuaBindingOsX.dylib in Copy CIMLua Frameworks */,
-				168D5DA88058C373B102ECED /* libCIMLuaBindingAVFoundation.dylib in Copy CIMLua Frameworks */,
-				A69A9FCBB08427121E4B385D /* libCIMLuaBindingGameController.dylib in Copy CIMLua Frameworks */,
-				D0C00680535272FD021EE3B0 /* libCIMLuaBindingSpriteKit.dylib in Copy CIMLua Frameworks */,
-				56D2E5484CAB2B39B628666D /* libCIMLuaBindingCoreAudio.dylib in Copy CIMLua Frameworks */,
-				65D007784DDEEED1CB78CC63 /* libCIMLuaBindingCoreGraphics.dylib in Copy CIMLua Frameworks */,
-				B52C962E940FE36C66D9D563 /* libCIMLuaBindingGLKit.dylib in Copy CIMLua Frameworks */,
-				1F93E23965C2BB1313C92E79 /* libCIMLuaBindingFoundation.dylib in Copy CIMLua Frameworks */,
-				56DE84CCAE0CCDC3525E82C5 /* libCIMLuaBindingAudioUnit.dylib in Copy CIMLua Frameworks */,
-				0B39CBD90BAA816293210BF2 /* libCIMLuaBindingCoreImage.dylib in Copy CIMLua Frameworks */,
-				9D5906A6F348E43E90514B97 /* libCIMLuaBindingQuartzCore.dylib in Copy CIMLua Frameworks */,
-				96C5240093D19ADBB053E83E /* libCIMLuaBindingSceneKit.dylib in Copy CIMLua Frameworks */,
-				C3FBE8AED34009AC9D96FDEA /* libCIMLuaBindingMetal.dylib in Copy CIMLua Frameworks */,
-				0467DC0087CD0FDA917EBD02 /* libCIMLuaBindingAppKit.dylib in Copy CIMLua Frameworks */,
+				D644A78A3EE2DF4131D53FB6 /* CIMLuaX.dylib in Copy CIMLua Frameworks */,
+				2560F889F805CDD0D9F9D0F4 /* CIMLuaDebugServerOSX.dylib in Copy CIMLua Frameworks */,
 			);
 			name = "Copy CIMLua Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -107,35 +79,35 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		030974E9452F80E50C7E825B /* libCIMLuaBindingAudioToolbox.a */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = archive.ar; name = libCIMLuaBindingAudioToolbox.a; path = "/Users/jean-luc/Library/Application Support/com.celedev.CodeFlow/macosx/macOS-10.12.4-SDK.luabindings/BindingLibs/libCIMLuaBindingAudioToolbox.a"; sourceTree = "<absolute>"; };
 		0595C73A1E48508C8F70B687 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
-		09A964383E37206E3D95DB9F /* libCIMLuaBindingOsX.dylib */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "compiled.mach-o.dylib"; name = libCIMLuaBindingOsX.dylib; path = "/Users/jean-luc/Library/Application Support/com.celedev.CodeFlow/macosx/OSX-10.11.4-SDK.luabindings/BindingLibs/libCIMLuaBindingOsX.dylib"; sourceTree = "<absolute>"; };
-		0F9082E0CE59D8FA510742EA /* libCIMLuaBindingMetal.dylib */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "compiled.mach-o.dylib"; name = libCIMLuaBindingMetal.dylib; path = "/Users/jean-luc/Library/Application Support/com.celedev.CodeFlow/macosx/OSX-10.11.4-SDK.luabindings/BindingLibs/libCIMLuaBindingMetal.dylib"; sourceTree = "<absolute>"; };
-		1200258535E6CA0F77B7E479 /* libCIMLuaBindingCoreGraphics.dylib */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "compiled.mach-o.dylib"; name = libCIMLuaBindingCoreGraphics.dylib; path = "/Users/jean-luc/Library/Application Support/com.celedev.CodeFlow/macosx/OSX-10.11.4-SDK.luabindings/BindingLibs/libCIMLuaBindingCoreGraphics.dylib"; sourceTree = "<absolute>"; };
+		081651223B42FE2853745074 /* libCIMLuaBindingmacOS.a */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = archive.ar; name = libCIMLuaBindingmacOS.a; path = "/Users/jean-luc/Library/Application Support/com.celedev.CodeFlow/macosx/macOS-10.12.4-SDK.luabindings/BindingLibs/libCIMLuaBindingmacOS.a"; sourceTree = "<absolute>"; };
 		22A5F840A7E7E74DF2383F1A /* CoreImage.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreImage.framework; path = System/Library/Frameworks/CoreImage.framework; sourceTree = SDKROOT; };
 		2A3CA79B3B9E8E9B0759D9FF /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
+		2A8CCC331DF26B0B35696C80 /* libCIMLuaBindingCoreAudio.a */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = archive.ar; name = libCIMLuaBindingCoreAudio.a; path = "/Users/jean-luc/Library/Application Support/com.celedev.CodeFlow/macosx/macOS-10.12.4-SDK.luabindings/BindingLibs/libCIMLuaBindingCoreAudio.a"; sourceTree = "<absolute>"; };
 		313CDF7A3202890F433C39C4 /* Metal.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Metal.framework; path = System/Library/Frameworks/Metal.framework; sourceTree = SDKROOT; };
+		34D9A800CD25879990657439 /* libCIMLuaBindingGameController.a */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = archive.ar; name = libCIMLuaBindingGameController.a; path = "/Users/jean-luc/Library/Application Support/com.celedev.CodeFlow/macosx/macOS-10.12.4-SDK.luabindings/BindingLibs/libCIMLuaBindingGameController.a"; sourceTree = "<absolute>"; };
 		40EE32DD41CE27DED53F6CEE /* CoreAudio.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreAudio.framework; path = System/Library/Frameworks/CoreAudio.framework; sourceTree = SDKROOT; };
-		524304AC055C8CB7BB9C43A2 /* libCIMLuaBindingLuaPanda.a */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = archive.ar; name = libCIMLuaBindingLuaPanda.a; path = "/Users/jean-luc/Library/Caches/com.celedev.CodeFlow/Programs/A7924406-7282-42AF-8634-D55F51035252/ExternalLibs/LuaPanda.luabindings/BindingLibs/libCIMLuaBindingLuaPanda.a"; sourceTree = "<absolute>"; };
 		57F336E6164C7D0CD850A4AE /* CIMLuaX.dylib */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "compiled.mach-o.dylib"; name = CIMLuaX.dylib; path = "/Users/jean-luc/Library/Application Support/com.celedev.CodeFlow/macosx/CIMLuaX.dylib"; sourceTree = "<absolute>"; };
-		5DABC6D4DDDB2B15BB166CB1 /* libCIMLuaBindingQuartzCore.dylib */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "compiled.mach-o.dylib"; name = libCIMLuaBindingQuartzCore.dylib; path = "/Users/jean-luc/Library/Application Support/com.celedev.CodeFlow/macosx/OSX-10.11.4-SDK.luabindings/BindingLibs/libCIMLuaBindingQuartzCore.dylib"; sourceTree = "<absolute>"; };
 		64D881587E352A8CE06323A1 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		6688CD006858C7C145D1FB64 /* libCIMLuaBindingAppKit.a */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = archive.ar; name = libCIMLuaBindingAppKit.a; path = "/Users/jean-luc/Library/Application Support/com.celedev.CodeFlow/macosx/macOS-10.12.4-SDK.luabindings/BindingLibs/libCIMLuaBindingAppKit.a"; sourceTree = "<absolute>"; };
 		6AF8EB277F8E7151B6CCFD25 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
-		6CC400268AB9BD69F680F424 /* libCIMLuaBindingCoreImage.dylib */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "compiled.mach-o.dylib"; name = libCIMLuaBindingCoreImage.dylib; path = "/Users/jean-luc/Library/Application Support/com.celedev.CodeFlow/macosx/OSX-10.11.4-SDK.luabindings/BindingLibs/libCIMLuaBindingCoreImage.dylib"; sourceTree = "<absolute>"; };
-		76C82D787CAB1B7F5189FF4E /* libCIMLuaBindingSceneKit.dylib */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "compiled.mach-o.dylib"; name = libCIMLuaBindingSceneKit.dylib; path = "/Users/jean-luc/Library/Application Support/com.celedev.CodeFlow/macosx/OSX-10.11.4-SDK.luabindings/BindingLibs/libCIMLuaBindingSceneKit.dylib"; sourceTree = "<absolute>"; };
-		782155876AA469E6337D44D1 /* libCIMLuaBindingSpriteKit.dylib */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "compiled.mach-o.dylib"; name = libCIMLuaBindingSpriteKit.dylib; path = "/Users/jean-luc/Library/Application Support/com.celedev.CodeFlow/macosx/OSX-10.11.4-SDK.luabindings/BindingLibs/libCIMLuaBindingSpriteKit.dylib"; sourceTree = "<absolute>"; };
-		7B0F8188F239ED3D803AF7A9 /* libCIMLuaBindingFoundation.dylib */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "compiled.mach-o.dylib"; name = libCIMLuaBindingFoundation.dylib; path = "/Users/jean-luc/Library/Application Support/com.celedev.CodeFlow/macosx/OSX-10.11.4-SDK.luabindings/BindingLibs/libCIMLuaBindingFoundation.dylib"; sourceTree = "<absolute>"; };
-		8105588BC5B74D75A7088386 /* libCIMLuaBindingAVFoundation.dylib */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "compiled.mach-o.dylib"; name = libCIMLuaBindingAVFoundation.dylib; path = "/Users/jean-luc/Library/Application Support/com.celedev.CodeFlow/macosx/OSX-10.11.4-SDK.luabindings/BindingLibs/libCIMLuaBindingAVFoundation.dylib"; sourceTree = "<absolute>"; };
+		72A16D9B4CB3EF7D026BC7B1 /* libCIMLuaBindingLuaPanda.a */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = archive.ar; name = libCIMLuaBindingLuaPanda.a; path = "/Users/jean-luc/Library/Caches/com.celedev.CodeFlow/Programs/9933374D-075B-4869-9D8E-341BAC1ECBB8/ExternalLibs/LuaPanda.luabindings/BindingLibs/libCIMLuaBindingLuaPanda.a"; sourceTree = "<absolute>"; };
+		79DD49CE378AECE7EB3C800C /* libCIMLuaBindingQuartzCore.a */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = archive.ar; name = libCIMLuaBindingQuartzCore.a; path = "/Users/jean-luc/Library/Application Support/com.celedev.CodeFlow/macosx/macOS-10.12.4-SDK.luabindings/BindingLibs/libCIMLuaBindingQuartzCore.a"; sourceTree = "<absolute>"; };
 		84C23E120B3523607D0546F2 /* CloudKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CloudKit.framework; path = System/Library/Frameworks/CloudKit.framework; sourceTree = SDKROOT; };
+		853466AA8CA1E59962DDBCE0 /* libCIMLuaBindingCoreImage.a */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = archive.ar; name = libCIMLuaBindingCoreImage.a; path = "/Users/jean-luc/Library/Application Support/com.celedev.CodeFlow/macosx/macOS-10.12.4-SDK.luabindings/BindingLibs/libCIMLuaBindingCoreImage.a"; sourceTree = "<absolute>"; };
 		8A66C436D77564723E911F98 /* SceneKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SceneKit.framework; path = System/Library/Frameworks/SceneKit.framework; sourceTree = SDKROOT; };
-		91233CC46A07BBF2A330B155 /* libCIMLuaBindingGLKit.dylib */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "compiled.mach-o.dylib"; name = libCIMLuaBindingGLKit.dylib; path = "/Users/jean-luc/Library/Application Support/com.celedev.CodeFlow/macosx/OSX-10.11.4-SDK.luabindings/BindingLibs/libCIMLuaBindingGLKit.dylib"; sourceTree = "<absolute>"; };
 		9840561063E5EB097F6B3BC2 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		9C8C46CE486204D3CE9E24BF /* GLKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GLKit.framework; path = System/Library/Frameworks/GLKit.framework; sourceTree = SDKROOT; };
-		9D1AF57126C6DE9926233D70 /* libCIMLuaBindingCoreAudio.dylib */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "compiled.mach-o.dylib"; name = libCIMLuaBindingCoreAudio.dylib; path = "/Users/jean-luc/Library/Application Support/com.celedev.CodeFlow/macosx/OSX-10.11.4-SDK.luabindings/BindingLibs/libCIMLuaBindingCoreAudio.dylib"; sourceTree = "<absolute>"; };
 		9FA394FD3959172996E63D76 /* CIMLuaDebugServerOSX.dylib */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "compiled.mach-o.dylib"; name = CIMLuaDebugServerOSX.dylib; path = "/Users/jean-luc/Library/Application Support/com.celedev.CodeFlow/macosx/CIMLuaDebugServerOSX.dylib"; sourceTree = "<absolute>"; };
+		A389A7CB44FC3B5687529960 /* libCIMLuaBindingMetal.a */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = archive.ar; name = libCIMLuaBindingMetal.a; path = "/Users/jean-luc/Library/Application Support/com.celedev.CodeFlow/macosx/macOS-10.12.4-SDK.luabindings/BindingLibs/libCIMLuaBindingMetal.a"; sourceTree = "<absolute>"; };
 		A4132F3DBD89FE3F4E8A1567 /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
-		D75E5A0F6964D85991F01E6E /* libCIMLuaBindingAppKit.dylib */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "compiled.mach-o.dylib"; name = libCIMLuaBindingAppKit.dylib; path = "/Users/jean-luc/Library/Application Support/com.celedev.CodeFlow/macosx/OSX-10.11.4-SDK.luabindings/BindingLibs/libCIMLuaBindingAppKit.dylib"; sourceTree = "<absolute>"; };
-		E0BC2945182D5E4AD351CAC6 /* libCIMLuaBindingGameController.dylib */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "compiled.mach-o.dylib"; name = libCIMLuaBindingGameController.dylib; path = "/Users/jean-luc/Library/Application Support/com.celedev.CodeFlow/macosx/OSX-10.11.4-SDK.luabindings/BindingLibs/libCIMLuaBindingGameController.dylib"; sourceTree = "<absolute>"; };
-		E1024312C8D59917B7F415A1 /* libCIMLuaBindingAudioUnit.dylib */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "compiled.mach-o.dylib"; name = libCIMLuaBindingAudioUnit.dylib; path = "/Users/jean-luc/Library/Application Support/com.celedev.CodeFlow/macosx/OSX-10.11.4-SDK.luabindings/BindingLibs/libCIMLuaBindingAudioUnit.dylib"; sourceTree = "<absolute>"; };
+		A4D76389EC4C2E365D37278D /* libCIMLuaBindingGLKit.a */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = archive.ar; name = libCIMLuaBindingGLKit.a; path = "/Users/jean-luc/Library/Application Support/com.celedev.CodeFlow/macosx/macOS-10.12.4-SDK.luabindings/BindingLibs/libCIMLuaBindingGLKit.a"; sourceTree = "<absolute>"; };
+		A68C29366E367B63E195BB87 /* libCIMLuaBindingCloudKit.a */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = archive.ar; name = libCIMLuaBindingCloudKit.a; path = "/Users/jean-luc/Library/Application Support/com.celedev.CodeFlow/macosx/macOS-10.12.4-SDK.luabindings/BindingLibs/libCIMLuaBindingCloudKit.a"; sourceTree = "<absolute>"; };
+		B143E31FA1C4510A9D012D2C /* libCIMLuaBindingSceneKit.a */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = archive.ar; name = libCIMLuaBindingSceneKit.a; path = "/Users/jean-luc/Library/Application Support/com.celedev.CodeFlow/macosx/macOS-10.12.4-SDK.luabindings/BindingLibs/libCIMLuaBindingSceneKit.a"; sourceTree = "<absolute>"; };
+		BECD1BECEDCFF9A4E4309DE4 /* libCIMLuaBindingSpriteKit.a */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = archive.ar; name = libCIMLuaBindingSpriteKit.a; path = "/Users/jean-luc/Library/Application Support/com.celedev.CodeFlow/macosx/macOS-10.12.4-SDK.luabindings/BindingLibs/libCIMLuaBindingSpriteKit.a"; sourceTree = "<absolute>"; };
+		D48A2092AC2EF236640E8877 /* libCIMLuaBindingFoundation.a */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = archive.ar; name = libCIMLuaBindingFoundation.a; path = "/Users/jean-luc/Library/Application Support/com.celedev.CodeFlow/macosx/macOS-10.12.4-SDK.luabindings/BindingLibs/libCIMLuaBindingFoundation.a"; sourceTree = "<absolute>"; };
+		D6C5BF1FF8CB6E4F7A76E21C /* libCIMLuaBindingCoreGraphics.a */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = archive.ar; name = libCIMLuaBindingCoreGraphics.a; path = "/Users/jean-luc/Library/Application Support/com.celedev.CodeFlow/macosx/macOS-10.12.4-SDK.luabindings/BindingLibs/libCIMLuaBindingCoreGraphics.a"; sourceTree = "<absolute>"; };
 		E9DD7FB658C9D082E03D0B5E /* AudioUnit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioUnit.framework; path = System/Library/Frameworks/AudioUnit.framework; sourceTree = SDKROOT; };
 		EF487CAE0D5051AB1EDE6A13 /* SpriteKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SpriteKit.framework; path = System/Library/Frameworks/SpriteKit.framework; sourceTree = SDKROOT; };
 		F5BE5B286CDB4ED30A50E0DE /* GameController.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GameController.framework; path = System/Library/Frameworks/GameController.framework; sourceTree = SDKROOT; };
@@ -186,21 +158,21 @@
 				E3803B2E105A525AE2248D42 /* GameController.framework in Frameworks */,
 				E54A0DED9717F9D6FA1BE48C /* CloudKit.framework in Frameworks */,
 				51073410134C7BB6D83798AA /* AudioToolbox.framework in Frameworks */,
-				6A3189A0DFF7E7D9257413E1 /* libCIMLuaBindingOsX.dylib in Frameworks */,
-				B47CCBD3B7D39F9155850464 /* libCIMLuaBindingAVFoundation.dylib in Frameworks */,
-				F645FA2D9224124A9154501C /* libCIMLuaBindingSpriteKit.dylib in Frameworks */,
-				4C6DED2EB23FEBB0A3965396 /* libCIMLuaBindingCoreAudio.dylib in Frameworks */,
-				96768975AE36A5D1CD1227AE /* libCIMLuaBindingCoreGraphics.dylib in Frameworks */,
-				7E1C5D8FBBF5B407E7F6E39C /* libCIMLuaBindingGLKit.dylib in Frameworks */,
-				1DB3240931C55F0A3EB2163B /* libCIMLuaBindingFoundation.dylib in Frameworks */,
-				024081FB50A1388DACADCEEF /* libCIMLuaBindingCoreImage.dylib in Frameworks */,
-				12F50FF3121348BBCB994508 /* libCIMLuaBindingQuartzCore.dylib in Frameworks */,
-				E73CFAAA10A0440CE1FF12DF /* libCIMLuaBindingAudioUnit.dylib in Frameworks */,
-				F612C31D00FEDEFA3FA0ECDE /* libCIMLuaBindingSceneKit.dylib in Frameworks */,
-				D0A6C1D35127EB11237E3B59 /* libCIMLuaBindingMetal.dylib in Frameworks */,
-				A754A6580EEDDBCE9536034A /* libCIMLuaBindingAppKit.dylib in Frameworks */,
-				BB035B0BA22C22B152050AA3 /* libCIMLuaBindingGameController.dylib in Frameworks */,
-				88DE73797B8CB9118513F2F9 /* libCIMLuaBindingLuaPanda.a in Frameworks */,
+				B5A47F7CFBE565AF7F1B3F7D /* libCIMLuaBindingSpriteKit.a in Frameworks */,
+				FF09EBD7D14CBB9C0A3A74AC /* libCIMLuaBindingCoreImage.a in Frameworks */,
+				61CFDD0FFC2AEA9C99A2AE73 /* libCIMLuaBindingAudioToolbox.a in Frameworks */,
+				387202944A03DB8DDB2EEF55 /* libCIMLuaBindingCoreGraphics.a in Frameworks */,
+				88DC1EEB09383A7DA8D8F2CD /* libCIMLuaBindingGLKit.a in Frameworks */,
+				F342C18D1A7A6FB3F9A7EEE3 /* libCIMLuaBindingLuaPanda.a in Frameworks */,
+				A2385E706630626243CFD6AB /* libCIMLuaBindingGameController.a in Frameworks */,
+				C8ED16072E6D6607B64449E2 /* libCIMLuaBindingMetal.a in Frameworks */,
+				A8DC39A920E439AD88E4A1D0 /* libCIMLuaBindingFoundation.a in Frameworks */,
+				34201AF2BDC03D973BC2E587 /* libCIMLuaBindingSceneKit.a in Frameworks */,
+				68DD3AFC7F82EBE988C4DBCC /* libCIMLuaBindingmacOS.a in Frameworks */,
+				5261D79C7210B0C810FF0CD1 /* libCIMLuaBindingCloudKit.a in Frameworks */,
+				A72356EE59723FD32A6D3D33 /* libCIMLuaBindingCoreAudio.a in Frameworks */,
+				BC03319B6EA00AB62EC4C414 /* libCIMLuaBindingQuartzCore.a in Frameworks */,
+				47139ADBCAE93FEFE0BAE459 /* libCIMLuaBindingAppKit.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -227,21 +199,21 @@
 				F5BE5B286CDB4ED30A50E0DE /* GameController.framework */,
 				84C23E120B3523607D0546F2 /* CloudKit.framework */,
 				A4132F3DBD89FE3F4E8A1567 /* AudioToolbox.framework */,
-				09A964383E37206E3D95DB9F /* libCIMLuaBindingOsX.dylib */,
-				8105588BC5B74D75A7088386 /* libCIMLuaBindingAVFoundation.dylib */,
-				782155876AA469E6337D44D1 /* libCIMLuaBindingSpriteKit.dylib */,
-				9D1AF57126C6DE9926233D70 /* libCIMLuaBindingCoreAudio.dylib */,
-				1200258535E6CA0F77B7E479 /* libCIMLuaBindingCoreGraphics.dylib */,
-				91233CC46A07BBF2A330B155 /* libCIMLuaBindingGLKit.dylib */,
-				7B0F8188F239ED3D803AF7A9 /* libCIMLuaBindingFoundation.dylib */,
-				6CC400268AB9BD69F680F424 /* libCIMLuaBindingCoreImage.dylib */,
-				5DABC6D4DDDB2B15BB166CB1 /* libCIMLuaBindingQuartzCore.dylib */,
-				E1024312C8D59917B7F415A1 /* libCIMLuaBindingAudioUnit.dylib */,
-				76C82D787CAB1B7F5189FF4E /* libCIMLuaBindingSceneKit.dylib */,
-				0F9082E0CE59D8FA510742EA /* libCIMLuaBindingMetal.dylib */,
-				D75E5A0F6964D85991F01E6E /* libCIMLuaBindingAppKit.dylib */,
-				E0BC2945182D5E4AD351CAC6 /* libCIMLuaBindingGameController.dylib */,
-				524304AC055C8CB7BB9C43A2 /* libCIMLuaBindingLuaPanda.a */,
+				BECD1BECEDCFF9A4E4309DE4 /* libCIMLuaBindingSpriteKit.a */,
+				853466AA8CA1E59962DDBCE0 /* libCIMLuaBindingCoreImage.a */,
+				030974E9452F80E50C7E825B /* libCIMLuaBindingAudioToolbox.a */,
+				D6C5BF1FF8CB6E4F7A76E21C /* libCIMLuaBindingCoreGraphics.a */,
+				A4D76389EC4C2E365D37278D /* libCIMLuaBindingGLKit.a */,
+				72A16D9B4CB3EF7D026BC7B1 /* libCIMLuaBindingLuaPanda.a */,
+				34D9A800CD25879990657439 /* libCIMLuaBindingGameController.a */,
+				A389A7CB44FC3B5687529960 /* libCIMLuaBindingMetal.a */,
+				D48A2092AC2EF236640E8877 /* libCIMLuaBindingFoundation.a */,
+				B143E31FA1C4510A9D012D2C /* libCIMLuaBindingSceneKit.a */,
+				081651223B42FE2853745074 /* libCIMLuaBindingmacOS.a */,
+				A68C29366E367B63E195BB87 /* libCIMLuaBindingCloudKit.a */,
+				2A8CCC331DF26B0B35696C80 /* libCIMLuaBindingCoreAudio.a */,
+				79DD49CE378AECE7EB3C800C /* libCIMLuaBindingQuartzCore.a */,
+				6688CD006858C7C145D1FB64 /* libCIMLuaBindingAppKit.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -344,12 +316,12 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 0730;
-				LastUpgradeCheck = 0800;
+				LastUpgradeCheck = 0830;
 				ORGANIZATIONNAME = Celedev;
 				TargetAttributes = {
 					FD7025B91CBA8CAE00BB305A = {
 						CreatedOnToolsVersion = 7.3;
-						LastSwiftMigration = 0800;
+						LastSwiftMigration = 0830;
 					};
 				};
 			};
@@ -514,15 +486,15 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
 				LIBRARY_SEARCH_PATHS = (
 					"$(USER_LIBRARY_DIR)/Application\\ Support/com.celedev.CodeFlow/macosx",
-					"$(USER_LIBRARY_DIR)/Application\\ Support/com.celedev.CodeFlow/macosx/OSX-10.11.4-SDK.luabindings/BindingLibs",
-					"$(USER_LIBRARY_DIR)/Caches/com.celedev.CodeFlow/Programs/A7924406-7282-42AF-8634-D55F51035252/ExternalLibs/LuaPanda.luabindings/BindingLibs",
+					"$(USER_LIBRARY_DIR)/Application\\ Support/com.celedev.CodeFlow/macosx/macOS-10.12.4-SDK.luabindings/BindingLibs",
+					"$(USER_LIBRARY_DIR)/Caches/com.celedev.CodeFlow/Programs/9933374D-075B-4869-9D8E-341BAC1ECBB8/ExternalLibs/LuaPanda.luabindings/BindingLibs",
 				);
 				MACOSX_DEPLOYMENT_TARGET = 10.11;
 				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_BUNDLE_IDENTIFIER = com.celedev.LuaPanda;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OBJC_BRIDGING_HEADER = "LuaPanda/LuaPanda-Bridging-Header.h";
-				SWIFT_VERSION = 2.3;
+				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
 		};
@@ -536,15 +508,15 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
 				LIBRARY_SEARCH_PATHS = (
 					"$(USER_LIBRARY_DIR)/Application\\ Support/com.celedev.CodeFlow/macosx",
-					"$(USER_LIBRARY_DIR)/Application\\ Support/com.celedev.CodeFlow/macosx/OSX-10.11.4-SDK.luabindings/BindingLibs",
-					"$(USER_LIBRARY_DIR)/Caches/com.celedev.CodeFlow/Programs/A7924406-7282-42AF-8634-D55F51035252/ExternalLibs/LuaPanda.luabindings/BindingLibs",
+					"$(USER_LIBRARY_DIR)/Application\\ Support/com.celedev.CodeFlow/macosx/macOS-10.12.4-SDK.luabindings/BindingLibs",
+					"$(USER_LIBRARY_DIR)/Caches/com.celedev.CodeFlow/Programs/9933374D-075B-4869-9D8E-341BAC1ECBB8/ExternalLibs/LuaPanda.luabindings/BindingLibs",
 				);
 				MACOSX_DEPLOYMENT_TARGET = 10.11;
 				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_BUNDLE_IDENTIFIER = com.celedev.LuaPanda;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OBJC_BRIDGING_HEADER = "LuaPanda/LuaPanda-Bridging-Header.h";
-				SWIFT_VERSION = 2.3;
+				SWIFT_VERSION = 3.0;
 			};
 			name = Release;
 		};

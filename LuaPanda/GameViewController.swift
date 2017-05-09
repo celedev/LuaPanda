@@ -7,7 +7,7 @@ import simd
 import GameController
 
 @objc protocol GameControlsHandler {
-    optional func panCamera(dx x:Float, dy y: Float)
+    @objc optional func panCamera(dx x:Float, dy y: Float)
 }
 
 
@@ -39,28 +39,28 @@ class GameViewController: NSViewController, GameControlsHandler {
         
         // If the Lua extension for this class has not been loaded yet, register to "Lua module loaded" notification, 
         // and  do the Lua setup for this object once this Lua extension is loaded
-        let luaContext = CIMLuaContext.defaultLuaContext()
-        if (luaContext == nil) || !luaContext!.isLuaClassExtensionLoadedForClass(self.dynamicType) {
+        let luaContext = CIMLuaContext.default()
+        if (luaContext == nil) || !luaContext!.isLuaClassExtensionLoaded(for: type(of: self)) {
             
-            NSNotificationCenter.defaultCenter().addObserver(self, selector: #selector(GameViewController.handleLuaModuleLoadedNotification), 
-                                                             name: kCIMLuaModuleLoadedNotification, object: nil)
+            NotificationCenter.default.addObserver(self, selector: #selector(GameViewController.handleLuaModuleLoadedNotification), 
+                                                             name: NSNotification.Name.cimLuaModuleLoaded, object: nil)
         }
     }
 
-    override var representedObject: AnyObject? {
+    override var representedObject: Any? {
         didSet {
         // Update the view, if already loaded.
         }
     }
 
-    func handleLuaModuleLoadedNotification(notification: NSNotification) {
+    func handleLuaModuleLoadedNotification(_ notification: Notification) {
         
         let moduleName = notification.userInfo! [kCIMLuaModuleLoadedNotificationKeyModuleName] as! String
-        if moduleName == String(self.dynamicType) {
+        if moduleName == String(describing: type(of: self)) {
             // The loaded Lua module extending this class is now loaded and we can do any necessary setup in Lua
             (self as! CIMLuaObject).doLuaSetupIfNeeded()
             
-            NSNotificationCenter.defaultCenter().removeObserver(self, name: kCIMLuaModuleLoadedNotification, object: nil)
+            NotificationCenter.default.removeObserver(self, name: NSNotification.Name.cimLuaModuleLoaded, object: nil)
             
         }
     }

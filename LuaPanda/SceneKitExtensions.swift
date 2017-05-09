@@ -9,9 +9,9 @@ import SpriteKit
 // MARK: SceneKit
 
 extension SCNNode {
-    func normalizedDirectionInWorldXZPlane(relativeDirection: SCNVector3) -> SCNVector3 {
-        let p1 = self.presentationNode.convertPosition(relativeDirection, toNode: nil)
-        let p0 = self.presentationNode.convertPosition(SCNVector3Zero, toNode: nil)
+    func normalizedDirectionInWorldXZPlane(_ relativeDirection: SCNVector3) -> SCNVector3 {
+        let p1 = self.presentation.convertPosition(relativeDirection, to: nil)
+        let p0 = self.presentation.convertPosition(SCNVector3Zero, to: nil)
         var direction = float3(Float(p1.x - p0.x), 0.0, Float(p1.z - p0.z))
         
         if direction.x != 0.0 || direction.z != 0.0 {

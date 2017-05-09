@@ -38,7 +38,7 @@ class GameView: SCNView {
         }
     }
     
-    override func setFrameSize(newSize: NSSize) {
+    override func setFrameSize(_ newSize: NSSize) {
         super.setFrameSize(newSize)
         layout2DOverlay()
     }
@@ -46,26 +46,26 @@ class GameView: SCNView {
     #endif
     
     private func layout2DOverlay() {
-        overlayNode.position = CGPointMake(0.0, bounds.size.height)
+        overlayNode.position = CGPoint(x: 0.0, y: bounds.size.height)
         
-        congratulationsGroupNode.position = CGPointMake(bounds.size.width * 0.5, bounds.size.height * 0.5)
+        congratulationsGroupNode.position = CGPoint(x: bounds.size.width * 0.5, y: bounds.size.height * 0.5)
         
         congratulationsGroupNode.xScale = 1.0
         congratulationsGroupNode.yScale = 1.0
         let currentBbox = congratulationsGroupNode.calculateAccumulatedFrame()
         
         let margin = CGFloat(25.0)
-        let maximumAllowedBbox = CGRectInset(bounds, margin, margin)
+        let maximumAllowedBbox = bounds.insetBy(dx: margin, dy: margin)
         
-        let top = CGRectGetMaxY(currentBbox) - congratulationsGroupNode.position.y
-        let bottom = congratulationsGroupNode.position.y - CGRectGetMinY(currentBbox)
-        let maxTopAllowed = CGRectGetMaxY(maximumAllowedBbox) - congratulationsGroupNode.position.y
-        let maxBottomAllowed = congratulationsGroupNode.position.y - CGRectGetMinY(maximumAllowedBbox)
+        let top = currentBbox.maxY - congratulationsGroupNode.position.y
+        let bottom = congratulationsGroupNode.position.y - currentBbox.minY
+        let maxTopAllowed = maximumAllowedBbox.maxY - congratulationsGroupNode.position.y
+        let maxBottomAllowed = congratulationsGroupNode.position.y - maximumAllowedBbox.minY
         
-        let left = congratulationsGroupNode.position.x - CGRectGetMinX(currentBbox)
-        let right = CGRectGetMaxX(currentBbox) - congratulationsGroupNode.position.x
-        let maxLeftAllowed = congratulationsGroupNode.position.x - CGRectGetMinX(maximumAllowedBbox)
-        let maxRightAllowed = CGRectGetMaxX(maximumAllowedBbox) - congratulationsGroupNode.position.x
+        let left = congratulationsGroupNode.position.x - currentBbox.minX
+        let right = currentBbox.maxX - congratulationsGroupNode.position.x
+        let maxLeftAllowed = congratulationsGroupNode.position.x - maximumAllowedBbox.minX
+        let maxRightAllowed = maximumAllowedBbox.maxX - congratulationsGroupNode.position.x
         
         let topScale = top > maxTopAllowed ? maxTopAllowed / top : 1
         let bottomScale = bottom > maxBottomAllowed ? maxBottomAllowed / bottom : 1
@@ -84,7 +84,7 @@ class GameView: SCNView {
         
         // Setup the game overlays using SpriteKit.
         let skScene = SKScene(size: CGSize(width: w, height: h))
-        skScene.scaleMode = .ResizeFill
+        skScene.scaleMode = .resizeFill
         
         skScene.addChild(overlayNode)
         overlayNode.position = CGPoint(x: 0.0, y: h)
@@ -99,9 +99,9 @@ class GameView: SCNView {
         }
         
         // The pearl icon and count.
-        overlayNode.addChild(SKSpriteNode(imageNamed: "ItemsPearl.png", position: CGPointMake(110, -100), scale: 0.5))
+        overlayNode.addChild(SKSpriteNode(imageNamed: "ItemsPearl.png", position: CGPoint(x: 110, y: -100), scale: 0.5))
         collectedPearlCountLabel.text = "x0"
-        collectedPearlCountLabel.position = CGPointMake(152, -113)
+        collectedPearlCountLabel.position = CGPoint(x: 152, y: -113)
         overlayNode.addChild(collectedPearlCountLabel)
         
         // The virtual D-pad
@@ -117,13 +117,13 @@ class GameView: SCNView {
         
         // Assign the SpriteKit overlay to the SceneKit view.
         overlaySKScene = skScene
-        skScene.userInteractionEnabled = false
+        skScene.isUserInteractionEnabled = false
     }
     
     var collectedPearlsCount = 0 {
         didSet {
             if collectedPearlsCount == 10 {
-                collectedPearlCountLabel.position = CGPointMake(158, collectedPearlCountLabel.position.y)
+                collectedPearlCountLabel.position = CGPoint(x: 158, y: collectedPearlCountLabel.position.y)
             }
             collectedPearlCountLabel.text = "x\(collectedPearlsCount)"
         }
@@ -143,8 +143,8 @@ class GameView: SCNView {
         
         // Max image
         let characterNode = SKSpriteNode(imageNamed: "congratulations_pandaMax.png")
-        characterNode.position = CGPointMake(0.0, -220.0)
-        characterNode.anchorPoint = CGPointMake(0.5, 0.0)
+        characterNode.position = CGPoint(x: 0.0, y: -220.0)
+        characterNode.anchorPoint = CGPoint(x: 0.5, y: 0.0)
         
         congratulationsGroupNode.addChild(characterNode)
         congratulationsGroupNode.addChild(congratulationsNode)
@@ -157,18 +157,18 @@ class GameView: SCNView {
         
         // Animate
         (congratulationsNode.alpha, congratulationsNode.xScale, congratulationsNode.yScale) = (0.0, 0.0, 0.0)
-        congratulationsNode.runAction(SKAction.group([
-            SKAction.fadeInWithDuration(0.25),
-            SKAction.sequence([SKAction.scaleTo(1.22, duration: 0.25), SKAction.scaleTo(1.0, duration: 0.1)])]))
+        congratulationsNode.run(SKAction.group([
+            SKAction.fadeIn(withDuration: 0.25),
+            SKAction.sequence([SKAction.scale(to: 1.22, duration: 0.25), SKAction.scale(to: 1.0, duration: 0.1)])]))
         
         (characterNode.alpha, characterNode.xScale, characterNode.yScale) = (0.0, 0.0, 0.0)
-        characterNode.runAction(SKAction.sequence([
-            SKAction.waitForDuration(0.5),
+        characterNode.run(SKAction.sequence([
+            SKAction.wait(forDuration: 0.5),
             SKAction.group([
-                SKAction.fadeInWithDuration(0.5),
-                SKAction.sequence([SKAction.scaleTo(1.22, duration: 0.25), SKAction.scaleTo(1.0, duration: 0.1)])])]))
+                SKAction.fadeIn(withDuration: 0.5),
+                SKAction.sequence([SKAction.scale(to: 1.22, duration: 0.25), SKAction.scale(to: 1.0, duration: 0.1)])])]))
         
-        congratulationsGroupNode.position = CGPointMake(bounds.size.width * 0.5, bounds.size.height * 0.5);
+        congratulationsGroupNode.position = CGPoint(x: bounds.size.width * 0.5, y: bounds.size.height * 0.5);
     }
     
     // MARK: Mouse and Keyboard Events
@@ -177,37 +177,37 @@ class GameView: SCNView {
    
     var eventsDelegate: KeyboardAndMouseEventsDelegate?
     
-    override func mouseDown(theEvent: NSEvent) {
-        guard let eventsDelegate = eventsDelegate where eventsDelegate.mouseDown(self, theEvent: theEvent) else {
-            super.mouseDown(theEvent)
+    override func mouseDown(with theEvent: NSEvent) {
+        guard let eventsDelegate = eventsDelegate, eventsDelegate.mouseDown(view: self, theEvent: theEvent) else {
+            super.mouseDown(with: theEvent)
             return
         }
     }
     
-    override func mouseDragged(theEvent: NSEvent) {
-        guard let eventsDelegate = eventsDelegate where eventsDelegate.mouseDragged(self, theEvent: theEvent) else {
-            super.mouseDragged(theEvent)
+    override func mouseDragged(with theEvent: NSEvent) {
+        guard let eventsDelegate = eventsDelegate, eventsDelegate.mouseDragged(view: self, theEvent: theEvent) else {
+            super.mouseDragged(with: theEvent)
             return
         }
     }
     
-    override func mouseUp(theEvent: NSEvent) {
-        guard let eventsDelegate = eventsDelegate where eventsDelegate.mouseUp(self, theEvent: theEvent) else {
-            super.mouseUp(theEvent)
+    override func mouseUp(with theEvent: NSEvent) {
+        guard let eventsDelegate = eventsDelegate, eventsDelegate.mouseUp(view: self, theEvent: theEvent) else {
+            super.mouseUp(with: theEvent)
             return
         }
     }
     
-    override func keyDown(theEvent: NSEvent) {
-        guard let eventsDelegate = eventsDelegate where eventsDelegate.keyDown(self, theEvent: theEvent) else {
-            super.keyDown(theEvent)
+    override func keyDown(with theEvent: NSEvent) {
+        guard let eventsDelegate = eventsDelegate, eventsDelegate.keyDown(view: self, theEvent: theEvent) else {
+            super.keyDown(with: theEvent)
             return
         }
     }
     
-    override func keyUp(theEvent: NSEvent) {
-        guard let eventsDelegate = eventsDelegate where eventsDelegate.keyUp(self, theEvent: theEvent) else {
-            super.keyUp(theEvent)
+    override func keyUp(with theEvent: NSEvent) {
+        guard let eventsDelegate = eventsDelegate, eventsDelegate.keyUp(view: self, theEvent: theEvent) else {
+            super.keyUp(with: theEvent)
             return
         }
     }
