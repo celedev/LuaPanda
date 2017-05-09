@@ -17,7 +17,9 @@ All this update process only takes a few seconds to run, therefore it is way muc
 
 ## Configuration required
 
-A Mac with Celedev CodeFlow version 1.0.3 or later, and Xcode 7 or later.
+A Mac with Celedev CodeFlow version 1.0.3 or later, and Xcode 8.
+
+You can also run LuaPanda with Xcode 7, if you use this version: https://github.com/celedev/LuaPanda/commit/05e57389e30fa807be4517b6f3af9f548181cbf3.
 
 The LuaPanda application runs on a Mac with macOS 10,11 El Capitan or later.
 
