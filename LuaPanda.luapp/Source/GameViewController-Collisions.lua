@@ -8,6 +8,7 @@
 local ScnPhysicsShape= require "SceneKit.SCNPhysicsShape"
 
 local SCNNode = objc.SCNNode
+local SCNReferenceNode = objc.SCNReferenceNode
 local SCNPhysicsBody = objc.SCNPhysicsBody
 local SCNPhysicsShape = objc.SCNPhysicsShape
 local SCNAction = objc.SCNAction
@@ -224,11 +225,14 @@ end
 function GameViewController:collectItem_withSound (itemContactNode, soundAudioSource)
     if itemContactNode.parentNode ~= nil then
         -- This item is not already collected
-        local itemNode = itemContactNode.parentNode.parentNode -- collectable items are reference nodes, so the contact node's parent is a reference root, and its parent is the collectable item node in the scene
-        if itemNode then
+        local collectedItemNode = itemContactNode.parentNode -- collectable items are reference nodes; depending on the Scenekit version, the node hierarchy of reference nodes changes, so find the reference node containing the contact node
+        while not collectedItemNode:isKindOfClass(SCNReferenceNode) do
+            collectedItemNode = collectedItemNode.parentNode
+        end
+        if collectedItemNode then
             -- mark the item as collected
             if self.collectedItems == nil then self.collectedItems = {} end
-            self.collectedItems [itemNode.name] = true
+            self.collectedItems [collectedItemNode.name] = true
         end
         
         if soundAudioSource then

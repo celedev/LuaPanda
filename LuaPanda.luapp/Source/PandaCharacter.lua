@@ -26,6 +26,8 @@ local random = math.random
 
 local CollisionsController = objc.GameViewController
 
+local walkSpeedFactor = 1.2
+
 -----------------------------------------------------------------------
 -- Class creation
 -----------------------------------------------------------------------
@@ -47,8 +49,6 @@ function PandaCharacter:init()
     
     self:addMessageHandler(self.class, "handleCodeUpdate")
 end
-
-local speedFactor = 1.2
 
 function PandaCharacter:updateCharacterFromScene (scene --[[@type objc.SCNScene]], sceneUrl --[[@type objc.NSURL]])
     
@@ -122,7 +122,7 @@ function PandaCharacter:updateCharacterFromScene (scene --[[@type objc.SCNScene]
                 
                 -- compute a character base speed from the walk animation and the character bounding box:
                 -- the walk animation duration corresponds to two steps and the step length is the bounding box width
-                self.baseWalkSpeed = (boxMax.x - boxMin.x) * 0.6 / self.walkAnimation.duration * 2 * speedFactor
+                self.baseWalkSpeed = (boxMax.x - boxMin.x) * 0.7 / self.walkAnimation.duration * 2 * walkSpeedFactor
                 
                 -- start the walk animation if needed
                 self:refreshWalkingAnimation()
@@ -331,7 +331,7 @@ PandaCharacter.walkSpeedup = property { default = 1.0,
                                     }
 
 function PandaCharacter:startWalkAnimation ()
-    self.walkAnimation.speed = self.walkSpeedup *  speedFactor
+    self.walkAnimation.speed = self.walkSpeedup *  walkSpeedFactor
     self.node:addAnimation_forKey (self.walkAnimation, "walk")
 end
 
@@ -441,7 +441,7 @@ end
 
 function PandaCharacter:handleCodeUpdate()
     self:getResource ("GameScnAssets.panda", "scn", "updateCharacterFromScene")
-    self.walkSpeedup = 1.2
+    -- self.walkSpeedup = 1.0
 end
 
 -----------------------------------------------------------------------

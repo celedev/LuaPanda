@@ -353,8 +353,8 @@ function GameViewController:setupCameras(scene --[[@type objc.SCNScene]], gameSt
                                       [rootNode:childNodeWithName_recursively("bloc05_collisionMesh_01", true)] = CGPoint(-0.072051, 8.202264),
                                     }
     
-    local isGameStarting = (gameStateData == nil) or 
-                           ((gameStateData.cameraXAngle == cameraDefaultAngleX) and (gameStateData.cameraYAngle == cameraDefaultAngleY))
+    local isGameStarting = (gameStateData == nil) or self.lockCamera or
+                           ((abs(gameStateData.cameraXAngle - cameraDefaultAngleX) < 0.0001) and (abs(gameStateData.cameraYAngle -cameraDefaultAngleY) < 0.0001))
     
     if isGameStarting then
         
