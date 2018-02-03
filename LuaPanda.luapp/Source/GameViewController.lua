@@ -14,13 +14,14 @@ local SCNVector4 = struct.SCNVector4
 
 local CaMediaTimingFunction = require "QuartzCore.CAMediaTimingFunction"
 local CaMediaTiming = require "QuartzCore.CAMediaTiming"
-local CACurrentMediaTime = require "QuartzCore.CABase".CACurrentMediaTime
+local CACurrentMediaTime = require "QuartzCore.CABase".CurrentMediaTime
 
 local ScnSceneSource = require "SceneKit.SCNSceneSource"
 
 local pi = math.pi
 local min = math.min
 local max = math.max
+local abs = math.abs
 
 local PandaCharacter = require "PandaCharacter"
 
@@ -70,8 +71,7 @@ function GameViewController:viewControllerStateData()
     end
 end
 
-GameViewController.storyboardIdentifier = "ViewController"
-
+GameViewController.storyboardIdentifier = "GameViewController"
 
 function GameViewController:gameStateData()
     local gameStateData
@@ -362,7 +362,9 @@ function GameViewController:setupCameras(scene --[[@type objc.SCNScene]], gameSt
         
         SCNTransaction:begin()
         SCNTransaction:setAnimationDuration (0.25)
-        SCNTransaction:setCompletionBlock (function() self.lockCamera = false end)
+        SCNTransaction:setCompletionBlock (function() 
+                                               self.lockCamera = false 
+                                           end)
         
         self.lockCamera = true
         
@@ -373,7 +375,7 @@ function GameViewController:setupCameras(scene --[[@type objc.SCNScene]], gameSt
         cameraYAnimation.toValue = 0.0
         cameraYAnimation.additive = true
         cameraYAnimation.beginTime = CACurrentMediaTime() + 3.0
-        cameraYAnimation.fillMode = CaMediaTiming.kCAFillModeBoth
+        cameraYAnimation.fillMode = CaMediaTiming.FillModeBoth
         cameraYAnimation.duration = 5.0
         cameraYAnimation.timingFunction = objc.CAMediaTimingFunction:functionWithName(CaMediaTimingFunction.EaseInEaseOut)
         cameraYHandle:addAnimation_forKey (cameraYAnimation, nil)
@@ -424,17 +426,6 @@ end
 -----------------------------------------------------------------------
 
 require "GameViewController-Collisions"
-
------------------------------------------------------------------------
--- Add the 'UpdatesMonitoring' class extension to this class if not done already
------------------------------------------------------------------------
-
-if not GameViewController:hasClassExtension('UpdatesMonitoring') then
-    
-    local monitorUpdatesForViewControllerClass = require 'MonitorControllerClass'
-    monitorUpdatesForViewControllerClass (GameViewController, nil --[[ 'MainStoryboard']])
-    
-end
 
 -----------------------------------------------------------------------
 -- return the class defined by this module

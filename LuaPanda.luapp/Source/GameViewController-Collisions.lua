@@ -77,7 +77,7 @@ function GameViewController:setupCollisionNode (node)
     if nodeGeometry then
         -- Add a concave static physics-body to the node
         local physicsBody = SCNPhysicsBody:staticBody()
-        physicsBody.physicsShape = SCNPhysicsShape:shapeWithNode_options(node, { [ScnPhysicsShape.TypeKey] = ScnPhysicsShape.TypeConcavePolyhedron })
+        physicsBody.physicsShape = SCNPhysicsShape:shapeWithNode_options(node, { [ScnPhysicsShape.OptionKey.Type] = ScnPhysicsShape.Type.ConcavePolyhedron })
         
         if node.name == 'water' then
             physicsBody.categoryBitMask = physicsBodyCategory.Water -- specific categoryBitMask for water

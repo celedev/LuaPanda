@@ -18,9 +18,9 @@ local SCNVector3 = struct.SCNVector3
 local SCNVector4 = struct.SCNVector4
 
 local ScnPhysicsWorld= require "SceneKit.SCNPhysicsWorld"
-local SCNPhysicsTestCollisionBitMaskKey = ScnPhysicsWorld.SCNPhysicsTestCollisionBitMaskKey
-local SCNPhysicsTestSearchModeKey = ScnPhysicsWorld.SCNPhysicsTestSearchModeKey
-local SCNPhysicsTestSearchModeClosest = ScnPhysicsWorld.SCNPhysicsTestSearchModeClosest
+local SCNPhysicsTestCollisionBitMaskKey = ScnPhysicsWorld.TestOptionKey.CollisionBitMask
+local SCNPhysicsTestSearchModeKey = ScnPhysicsWorld.TestOptionKey.SearchMode
+local SCNPhysicsTestSearchModeClosest = ScnPhysicsWorld.TestSearchMode.Closest
 
 local random = math.random
 

@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.Cocoa.Storyboard.XIB" version="3.0" toolsVersion="13122.19" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES" initialViewController="B8D-0N-5wS">
+<document type="com.apple.InterfaceBuilder3.Cocoa.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES" initialViewController="B8D-0N-5wS">
     <dependencies>
         <deployment identifier="macosx"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="13122.19"/>
-        <plugIn identifier="com.apple.SceneKitIBPlugin" version="13122.19"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="13771"/>
+        <plugIn identifier="com.apple.SceneKitIBPlugin" version="13771"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -659,6 +659,9 @@
                         <rect key="contentRect" x="196" y="240" width="800" height="600"/>
                         <rect key="screenRect" x="0.0" y="0.0" width="1680" height="1027"/>
                         <value key="minSize" type="size" width="800" height="600"/>
+                        <connections>
+                            <outlet property="delegate" destination="B8D-0N-5wS" id="orb-lL-i74"/>
+                        </connections>
                     </window>
                     <connections>
                         <segue destination="cbq-Gl-g4t" kind="relationship" relationship="window.shadowedContentViewController" id="FM9-ny-Qf6"/>
@@ -671,7 +674,7 @@
         <!--Game View Controller-->
         <scene sceneID="iNI-b7-qL4">
             <objects>
-                <viewController id="cbq-Gl-g4t" customClass="GameViewController" customModule="LuaPanda" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="GameViewController" id="cbq-Gl-g4t" customClass="GameViewController" customModule="LuaPanda" customModuleProvider="target" sceneMemberID="viewController">
                     <sceneView key="view" preferredRenderingAPI="1" id="NyY-N5-P21" customClass="GameView" customModule="LuaPanda" customModuleProvider="target">
                         <rect key="frame" x="0.0" y="0.0" width="800" height="600"/>
                         <autoresizingMask key="autoresizingMask"/>
