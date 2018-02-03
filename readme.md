@@ -1,7 +1,7 @@
 # LuaPanda
 
 
-LuaPanda is a small 3D SceneKit game written mostly in Lua. It is based on a code sample from Apple.
+LuaPanda is a small 3D SceneKit game written mostly in Lua with **[CodeFlow](https://www.celedev.com)**. It is based on a code sample from Apple.
 
 You run the character —a red panda— in a 3D scene, with the arrow keys, and use the mouse to change the camera position. The character can collect pearls and flowers on his way, but it shall avoid to be touched by the enemy's fire.
 
@@ -17,7 +17,7 @@ All this update process only takes a few seconds to run, therefore it is way muc
 
 ## Configuration required
 
-A Mac with Celedev CodeFlow version 1.2 or later, and Xcode 8 or 9.
+A Mac with Celedev [CodeFlow](https://www.celedev.com) version 1.2 or later ([download it from here](https://www.celedev.com/en/download)), and Xcode 8 or 9.
 
 You can also run LuaPanda with Xcode 7, if you use this version: https://github.com/celedev/LuaPanda/commit/05e57389e30fa807be4517b6f3af9f548181cbf3.
 
