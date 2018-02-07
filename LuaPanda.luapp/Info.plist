@@ -2,24 +2,6 @@
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
 <dict>
-	<key>Program Display Info</key>
-	<dict>
-		<key>LuaAppDocument-associatedXodeProject</key>
-		<dict>
-			<key>target</key>
-			<string>LuaPanda</string>
-			<key>targetSdk</key>
-			<string>macosx</string>
-			<key>targetType</key>
-			<string>com.apple.product-type.application</string>
-			<key>project</key>
-			<string>LuaPanda.xcodeproj</string>
-		</dict>
-		<key>LuaAppDocument-remote service pattern</key>
-		<string>starts:LuaPanda - LuaContext</string>
-		<key>LuaAppDocument-luapkgExportVersion</key>
-		<integer>0</integer>
-	</dict>
 	<key>Program Source Files Info</key>
 	<dict>
 		<key></key>
@@ -54,17 +36,17 @@
 			<key>Source File Auto Reload</key>
 			<true/>
 		</dict>
-		<key>::MainStoryboard.storyboard</key>
-		<dict>
-			<key>SourceItemOriginalFilePath</key>
-			<string>LuaPanda/Base.lproj/Main.storyboard</string>
-		</dict>
 		<key>::GameViewController-Collisions.lua</key>
 		<dict>
 			<key>SourceItemChangeTime</key>
 			<real>538933958.01037</real>
 			<key>Source File Auto Reload</key>
 			<true/>
+		</dict>
+		<key>::MainStoryboard.storyboard</key>
+		<dict>
+			<key>SourceItemOriginalFilePath</key>
+			<string>LuaPanda/Base.lproj/Main.storyboard</string>
 		</dict>
 		<key>::Start.lua</key>
 		<dict>
@@ -78,17 +60,17 @@
 			<key>SourceItemOriginalFilePath</key>
 			<string>LuaPanda/Game assets/Particle systems</string>
 		</dict>
-		<key>::StoryboardMonitor.lua</key>
-		<dict>
-			<key>SourceItemChangeTime</key>
-			<real>538869773.842708</real>
-		</dict>
 		<key>::GameScnAssets.scnassets</key>
 		<dict>
 			<key>SourceGroupIsLoadable</key>
 			<true/>
 			<key>SourceItemOriginalFilePath</key>
 			<string>LuaPanda/Game assets/game.scnassets</string>
+		</dict>
+		<key>::StoryboardMonitor.lua</key>
+		<dict>
+			<key>SourceItemChangeTime</key>
+			<real>538869773.842708</real>
 		</dict>
 		<key>::GameViewController.lua</key>
 		<dict>
@@ -98,9 +80,27 @@
 			<true/>
 		</dict>
 	</dict>
+	<key>Program Client Properties</key>
+	<dict>
+		<key>LuaAppDocument-remote service pattern</key>
+		<string>starts:LuaPanda - LuaContext</string>
+		<key>LuaAppDocument-luapkgExportVersion</key>
+		<integer>0</integer>
+	</dict>
 	<key>Program Platform Sdk Name</key>
 	<string>macosx</string>
 	<key>Program Format Version</key>
-	<string>0.92</string>
+	<string>0.93</string>
+	<key>Program Associated Xcode Project</key>
+	<dict>
+		<key>target</key>
+		<string>LuaPanda</string>
+		<key>targetSdk</key>
+		<string>macosx</string>
+		<key>targetType</key>
+		<string>com.apple.product-type.application</string>
+		<key>project</key>
+		<string>LuaPanda.xcodeproj</string>
+	</dict>
 </dict>
 </plist>
